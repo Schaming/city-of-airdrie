@@ -15,6 +15,9 @@ import { generateMeta } from '@/utilities/generateMeta'
 import PageClient from './page.client'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
 
+// Dynamic so Cloud Build can complete without a DB (generateStaticParams not run at build)
+export const dynamic = 'force-dynamic'
+
 export async function generateStaticParams() {
   try {
     const payload = await getPayload({ config: configPromise })

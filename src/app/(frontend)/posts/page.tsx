@@ -8,7 +8,8 @@ import { getPayload } from 'payload';
 import React from 'react';
 import PageClient from './page.client';
 
-export const dynamic = 'force-static';
+// Dynamic so Cloud Build can complete without a DB (no static prerender at build time)
+export const dynamic = 'force-dynamic';
 export const revalidate = 600;
 
 export default async function Page() {

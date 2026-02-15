@@ -64,7 +64,7 @@ ENV VECTOR_DATABASE_URL=$VECTOR_DATABASE_URL
 
 RUN \
   export PAYLOAD_SECRET="${PAYLOAD_SECRET:-DUMMY_SECRET_FOR_BUILD}" && \
-  export DATABASE_URL="${DATABASE_URL:-file:./build-dummy.db}" && \
+  export DATABASE_URL="${DATABASE_URL:-postgresql://build:build@localhost:1/build}" && \
   export DATABASE_AUTH_TOKEN="${DATABASE_AUTH_TOKEN:-}" && \
   export S3_BUCKET="${S3_BUCKET:-dummy}" && \
   export S3_ENDPOINT="${S3_ENDPOINT:-https://dummy.supabase.co}" && \

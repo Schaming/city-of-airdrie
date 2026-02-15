@@ -9,6 +9,8 @@ import React from 'react'
 import PageClient from './page.client'
 import { notFound } from 'next/navigation'
 
+// Dynamic so Cloud Build can complete without a DB (generateStaticParams not run at build)
+export const dynamic = 'force-dynamic'
 export const revalidate = 600
 
 type Args = {

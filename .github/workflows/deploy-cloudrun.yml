@@ -10,7 +10,7 @@ on:
 env:
   PROJECT_ID: zoningbylawdemo
   REGION: us-central1
-  SERVICE_NAME: zoningbylaw-api
+  SERVICE_NAME: zoningbylaw-airdrie
 
 jobs:
   e2e:

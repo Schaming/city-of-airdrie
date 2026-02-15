@@ -19,3 +19,6 @@ zoningbylaw.db
 # Test artifacts
 coverage/
 playwright-report/
+
+# Python extraction scripts (not needed for Next.js app; prevents buildpack from detecting Python)
+scripts/

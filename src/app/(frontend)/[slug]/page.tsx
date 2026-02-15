@@ -13,6 +13,9 @@ import { RenderHero } from '@/heros/RenderHero'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
 import { generateMeta } from '@/utilities/generateMeta'
 
+// Dynamic so Cloud Build can complete without a DB (generateStaticParams not run at build)
+export const dynamic = 'force-dynamic'
+
 export async function generateStaticParams() {
   try {
     const payload = await getPayload({ config: configPromise })

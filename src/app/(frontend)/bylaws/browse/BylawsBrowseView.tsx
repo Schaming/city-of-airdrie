@@ -1,59 +1,42 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import type { BylawBlock } from '@/types/bylawBlocks'
-import { AllBylawsSidebar } from './AllBylawsSidebar'
-import { BlocksRenderer } from './BlocksRender'
+import type {
+  BylawSubsection,
+  SectionWithSubsections,
+  SearchResult,
+} from '../../components/AllBylawsView'
+import { BlocksRenderer } from '../../components/BlocksRender'
 import {
   ReferenceSidebarProvider,
   useReferenceSidebar,
-  type Amendment,
-} from './ReferenceSidebarContext'
-import { ReferenceSidebar } from './ReferenceSidebar'
-import { ReferenceDrawer } from './ReferenceDrawer'
+} from '../../components/ReferenceSidebarContext'
+import { ReferenceSidebar } from '../../components/ReferenceSidebar'
+import { ReferenceDrawer } from '../../components/ReferenceDrawer'
 import { Search, Loader2 } from 'lucide-react'
 import Link from 'next/link'
+import { BylawsBrowseSidebar } from './BylawsBrowseSidebar'
 
-export type BylawSection = {
+const BASE_PATH = '/bylaws/browse'
+
+export type BylawListItem = { id: number; title: string | null }
+
+export type SidebarSectionItem = {
   id: string | number
   slug: string
-  label: string
   code: string
   title: string
-  /** Parent bylaw document that encompasses this section (when many bylaws exist). */
   bylaw?: { id: number; title: string | null } | null
-  /** Section-level content blocks (intro text, tables, etc.). */
-  content?: BylawBlock[]
-}
-
-export type BylawSubsection = {
-  id: string | number
-  slug: string
-  label: string
-  level?: number
-  code: string
-  title: string
-  sortOrder?: number
-  content: BylawBlock[]
-  amendments?: Amendment[]
-}
-
-export type SearchResult = {
-  id: number
-  title: string
-  code: string
-  slug: string
-  content: string
-  similarity: number
-}
-
-export type SectionWithSubsections = {
-  section: BylawSection
-  subsections: BylawSubsection[]
+  subsections: { id: string | number; slug: string; code: string; title: string; level?: number }[]
 }
 
 type Props = {
-  sectionsWithSubsections: SectionWithSubsections[]
+  bylawList: BylawListItem[]
+  sectionsWithSubsections?: SectionWithSubsections[]
+  sectionsByBylawId?: Record<number, SidebarSectionItem[]>
+  initialSectionSlug?: string | null
+  currentBylawId?: number | null
+  error?: string
 }
 
 type SearchFormProps = {
@@ -132,7 +115,16 @@ function SearchForm({
   )
 }
 
-export function AllBylawsView({ sectionsWithSubsections }: Props) {
+export function BylawsBrowseView({
+  bylawList,
+  sectionsWithSubsections = [],
+  sectionsByBylawId = {},
+  initialSectionSlug,
+  currentBylawId,
+  error,
+}: Props) {
+  const isPicker = !sectionsWithSubsections.length || currentBylawId == null
+
   const [searchQuery, setSearchQuery] = useState('')
   const [searchResults, setSearchResults] = useState<SearchResult[]>([])
   const [aiAnswer, setAiAnswer] = useState<string | null>(null)
@@ -142,6 +134,14 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
   const [position, setPosition] = useState({ x: 20, y: 150 })
   const [isDragging, setIsDragging] = useState(false)
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 })
+
+  useEffect(() => {
+    if (!initialSectionSlug) return
+    const el = document.getElementById(initialSectionSlug)
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }, [initialSectionSlug])
 
   const handleMouseDown = (e: React.MouseEvent) => {
     if ((e.target as HTMLElement).closest('.drag-handle')) {
@@ -184,7 +184,7 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
       timeout = setTimeout(() => {
         setHasSearched(false)
         setAiAnswer(null)
-      }, 5000) // 5 second timeout
+      }, 5000)
     }
     return () => clearTimeout(timeout)
   }, [hasSearched, searchResults.length, isSearching])
@@ -200,18 +200,26 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
       const res = await fetch(`/api/semantic-search?q=${encodeURIComponent(searchQuery)}`)
       const data = await res.json()
       const results = (data.results || []) as SearchResult[]
-      // Explicitly sort by similarity descending in the frontend
       setSearchResults(results.sort((a, b) => b.similarity - a.similarity))
       setAiAnswer(data.answer || null)
       if (results.length === 0) {
         setLastEmptyQuery(searchQuery)
       }
-    } catch (error) {
-      console.error('Search error:', error)
+    } catch (err) {
+      console.error('Search error:', err)
     } finally {
       setIsSearching(false)
     }
   }
+
+  const sidebarItems = sectionsWithSubsections.map(({ section, subsections }) => ({
+    id: section.id,
+    slug: section.slug,
+    code: section.code,
+    title: section.title,
+    bylaw: section.bylaw ?? undefined,
+    subsections,
+  }))
 
   return (
     <ReferenceSidebarProvider>
@@ -219,9 +227,11 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
         <header className="border-b pb-4 mb-6">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
-              <h1 className="text-2xl font-semibold">All Bylaws</h1>
+              <h1 className="text-2xl font-semibold">{isPicker ? 'Browse bylaw' : 'Bylaw'}</h1>
               <p className="text-sm text-gray-600">
-                Browse every bylaw with its subsections in one view.
+                {isPicker
+                  ? 'Select a bylaw to view its sections and subsections.'
+                  : 'Browse sections and subsections for the selected bylaw.'}
               </p>
             </div>
 
@@ -252,18 +262,21 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
             </details>
           </div>
 
+          {error && (
+            <div className="mt-4 p-4 bg-amber-50 border border-amber-200 rounded-lg text-amber-800 text-sm">
+              {error}
+            </div>
+          )}
+
           {hasSearched && !isSearching && searchResults.length === 0 && (
             <div className="mt-6 bg-gray-50 p-4 rounded-lg border border-gray-200 animate-in fade-in slide-in-from-top-2 duration-300">
               <div className="flex items-center gap-2 text-gray-600 italic">
                 <Search className="h-4 w-4" />
                 <p className="text-sm">
-                  {`No matching bylaws found for "${lastEmptyQuery}". Try a different
-                  question.`}
+                  {`No matching bylaws found for "${lastEmptyQuery}". Try a different question.`}
                 </p>
                 <button
-                  onClick={() => {
-                    setHasSearched(false)
-                  }}
+                  onClick={() => setHasSearched(false)}
                   className="ml-auto text-xs text-blue-600 hover:underline not-italic"
                 >
                   Dismiss
@@ -283,7 +296,6 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
             onMouseDown={handleMouseDown}
             className="fixed z-50 w-[90vw] md:w-[400px] bg-blue-50/95 backdrop-blur-md rounded-2xl border-2 border-blue-200 shadow-2xl overflow-hidden select-none touch-none"
           >
-            {/* Drag Handle */}
             <div className="drag-handle bg-blue-600 p-2 cursor-grab active:cursor-grabbing flex items-center justify-between">
               <div className="flex items-center gap-2 text-white">
                 <div className="grid grid-cols-2 gap-0.5 opacity-50">
@@ -343,7 +355,7 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
                     className="bg-white p-3 rounded-xl border border-blue-100 shadow-sm hover:border-blue-300 transition-all hover:shadow-md"
                   >
                     <Link
-                      href={`/bylaws/all#${result.slug}`}
+                      href={`${BASE_PATH}?section=${encodeURIComponent(result.slug)}`}
                       className="text-blue-600 font-bold hover:underline block text-[13px] leading-tight"
                     >
                       {result.code} {result.title}
@@ -356,7 +368,7 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
                         {Math.round(result.similarity * 100)}% Match
                       </div>
                       <Link
-                        href={`/bylaws/all#${result.slug}`}
+                        href={`${BASE_PATH}?section=${encodeURIComponent(result.slug)}`}
                         className="text-[10px] text-blue-600 font-bold hover:text-blue-800"
                       >
                         Navigate →
@@ -369,75 +381,111 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
           </div>
         )}
 
-        <div className="md:hidden">
-          <details className="rounded-lg border border-gray-200 bg-white p-3 shadow-sm">
-            <summary className="flex cursor-pointer items-center justify-between text-sm font-semibold text-gray-800 hover:text-blue-700">
-              <span>Table of contents</span>
-              <span className="text-xs text-gray-600">tap to expand</span>
-            </summary>
-            <div className="mt-3">
-              <AllBylawsSidebar
-                items={sectionsWithSubsections.map(({ section, subsections }) => ({
-                  id: section.id,
-                  slug: section.slug,
-                  code: section.code,
-                  title: section.title,
-                  subsections,
-                }))}
+        {isPicker ? (
+          <div className="flex flex-col md:flex-row gap-8">
+            <aside
+              className="hidden md:block md:w-72 md:shrink-0 md:border-r md:pr-4 md:sticky md:top-4 self-start"
+              aria-label="Bylaw Navigation"
+            >
+              <BylawsBrowseSidebar
+                items={[]}
+                bylawList={bylawList}
+                sectionsByBylawId={sectionsByBylawId}
               />
+            </aside>
+            <div className="flex-1 space-y-6">
+              <h2 className="text-lg font-semibold text-gray-800">Select a bylaw</h2>
+              <ul className="list-none space-y-2">
+                {bylawList.map(b => (
+                  <li key={b.id}>
+                    <Link
+                      href={`${BASE_PATH}?bylaw=${b.id}`}
+                      className="text-blue-600 hover:underline font-medium"
+                    >
+                      {b.title ?? `Bylaw ${b.id}`}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              {bylawList.length === 0 && (
+                <p className="text-gray-600 text-sm">No bylaws available.</p>
+              )}
             </div>
-          </details>
-        </div>
-
-        <div className="flex flex-col md:flex-row gap-8">
-          <aside
-            className="hidden md:block md:w-72 md:shrink-0 md:border-r md:pr-4 md:sticky md:top-4 self-start"
-            aria-label="Bylaw Navigation"
-          >
-            <AllBylawsSidebar
-              items={sectionsWithSubsections.map(({ section, subsections }) => ({
-                id: section.id,
-                slug: section.slug,
-                code: section.code,
-                title: section.title,
-                bylaw: section.bylaw ?? undefined,
-                subsections,
-              }))}
-            />
-          </aside>
-
-          <section className="flex-1 min-w-0 space-y-12">
-            {sectionsWithSubsections.map(({ section, subsections }, index) => (
-              <section key={section.id} id={section.slug} className="space-y-6">
-                <div className="">
-                  {index === 0 && section.bylaw?.title && (
-                    <p className="text-2xl font-semibold text-gray-700 mb-2">
-                      {section.bylaw.title}
-                    </p>
-                  )}
-                  <h2 className="text-lg font-semibold">
-                    {section.code} {section.title}
-                  </h2>
-                  {/* <p className="text-sm text-gray-600">{section.label}</p> */}
+          </div>
+        ) : (
+          <>
+            <div className="md:hidden">
+              <details className="rounded-lg border border-gray-200 bg-white p-3 shadow-sm">
+                <summary className="flex cursor-pointer items-center justify-between text-sm font-semibold text-gray-800 hover:text-blue-700">
+                  <span>Table of contents</span>
+                  <span className="text-xs text-gray-600">tap to expand</span>
+                </summary>
+                <div className="mt-3">
+                  <BylawsBrowseSidebar
+                    items={[]}
+                    initialSectionSlug={initialSectionSlug}
+                    currentBylawId={currentBylawId}
+                    bylawList={bylawList}
+                    sectionsByBylawId={{
+                      ...sectionsByBylawId,
+                      ...(currentBylawId != null ? { [currentBylawId]: sidebarItems } : {}),
+                    }}
+                  />
                 </div>
+              </details>
+            </div>
 
-                {section.content && section.content.length > 0 && (
-                  <div className="section-content">
-                    <BlocksRenderer blocks={section.content} />
-                  </div>
-                )}
+            <div className="flex flex-col md:flex-row gap-8">
+              <aside
+                className="hidden md:block md:w-72 md:shrink-0 md:border-r md:pr-4 md:sticky md:top-4 self-start"
+                aria-label="Bylaw Navigation"
+              >
+                <BylawsBrowseSidebar
+                  items={[]}
+                  initialSectionSlug={initialSectionSlug}
+                  currentBylawId={currentBylawId}
+                  bylawList={bylawList}
+                  sectionsByBylawId={{
+                    ...sectionsByBylawId,
+                    ...(currentBylawId != null ? { [currentBylawId]: sidebarItems } : {}),
+                  }}
+                />
+              </aside>
 
-                <div className="space-y-8">
-                  {subsections.map(sub => (
-                    <SubsectionArticle key={sub.id} sub={sub} />
-                  ))}
-                </div>
+              <section className="flex-1 min-w-0 space-y-12">
+                {sectionsWithSubsections.map(({ section, subsections }, index) => (
+                  <section key={section.id} id={section.slug} className="space-y-6">
+                    <div>
+                      {index === 0 && section.bylaw?.title && (
+                        <p className="text-2xl font-semibold text-gray-700 mb-2">
+                          {section.bylaw.title}
+                        </p>
+                      )}
+                      <h2 className="text-lg font-semibold">
+                        {section.code} {section.title}
+                      </h2>
+                    </div>
+
+                    {section.content && section.content.length > 0 && (
+                      <div className="section-content">
+                        <BlocksRenderer blocks={section.content} />
+                      </div>
+                    )}
+
+                    <div className="space-y-8">
+                      {subsections.map(sub => (
+                        <SubsectionArticle key={sub.id} sub={sub} />
+                      ))}
+                    </div>
+                  </section>
+                ))}
               </section>
-            ))}
-          </section>
 
-          <ReferenceSidebar />
-        </div>
+              <ReferenceSidebar />
+            </div>
+          </>
+        )}
+
         <ReferenceDrawer />
       </div>
     </ReferenceSidebarProvider>

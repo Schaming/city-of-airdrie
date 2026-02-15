@@ -233,9 +233,9 @@ async function processSubsections(payload: Payload, regex: RegExp, aliasMap: Map
 
 async function start() {
   const dbUrl =
-    process.env.DATABASE_URL || process.env.DATABASE_URI || process.env.TURSO_DATABASE_URL;
+    process.env.DATABASE_URL || process.env.TURSO_DATABASE_URL;
   if (!dbUrl) {
-    throw new Error('Database URL env var is not set (DATABASE_URL or TURSO_DATABASE_URL).');
+    throw new Error('Database URL env var is not set (DATABASE_URL).');
   }
   if (!process.env.PAYLOAD_SECRET) {
     throw new Error('PAYLOAD_SECRET is not set. Add it to .env or pass it via the environment.');

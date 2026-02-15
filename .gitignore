@@ -8,6 +8,7 @@ node_modules
 .env.test.local
 .env.production.local
 .env.command
+.env.supabase
 .next
 .vercel
 
@@ -29,3 +30,17 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# Data extraction directories
+extracted-bylaw-data-*/
+scripts/bylaw-1-extract-config.json
+scripts/bylaw-2-extract-config.json
+scripts/bylaw-3-extract-config.json
+scripts/bylaw-4-extract-config.json
+scripts/bylaw-5-extract-config.json
+scripts/bylaw-6-extract-config.json
+scripts/bylaw-7-extract-config.json
+scripts/bylaw-8-extract-config.json
+scripts/bylaw-9-extract-config.json
+
+scripts/myenv

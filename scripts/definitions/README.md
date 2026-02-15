@@ -15,7 +15,7 @@ The import process has two steps:
   - `definitions` - Stores definition terms and aliases
   - `definition-content` - Stores the actual definition text content
 - Environment variables set up:
-  - `DATABASE_URL` (or `DATABASE_URI` or `TURSO_DATABASE_URL`)
+  - `DATABASE_URL`
   - `PAYLOAD_SECRET`
 
 ## Step 1: Convert CSV to JSON
@@ -141,7 +141,7 @@ node importDefinitions.js
 
 ### "Database URL env var is not set"
 - Make sure your `.env` file exists in the project root
-- Check that `DATABASE_URL` (or similar) is defined
+- Check that `DATABASE_URL` is defined in `.env`
 
 ### "PAYLOAD_SECRET is not set"
 - Add `PAYLOAD_SECRET=your_secret_key` to your `.env` file

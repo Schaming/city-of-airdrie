@@ -27,7 +27,14 @@
     "test:e2e": "cross-env NODE_OPTIONS=\"--no-deprecation\" npx playwright test --config=playwright.config.ts",
     "test:int": "cross-env NODE_OPTIONS=--no-deprecation vitest run --config ./vitest.config.mts",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "extract:bylaw-2": "python3 scripts/extract-pdf-bylaw.py --config scripts/bylaw-2-extract-config.json",
+    "extract:bylaw:all": "python3 scripts/extract-pdf-bylaw.py --config scripts/bylaw-1-extract-config.json && python3 scripts/extract-pdf-bylaw.py --config scripts/bylaw-2-extract-config.json && python3 scripts/extract-pdf-bylaw.py --config scripts/bylaw-3-extract-config.json && python3 scripts/extract-pdf-bylaw.py --config scripts/bylaw-4-extract-config.json && python3 scripts/extract-pdf-bylaw.py --config scripts/bylaw-5-extract-config.json && python3 scripts/extract-pdf-bylaw.py --config scripts/bylaw-6-extract-config.json && python3 scripts/extract-pdf-bylaw.py --config scripts/bylaw-7-extract-config.json && python3 scripts/extract-pdf-bylaw.py --config scripts/bylaw-8-extract-config.json && python3 scripts/extract-pdf-bylaw.py --config scripts/bylaw-9-extract-config.json",
+    "upload:bylaw": "cross-env NODE_OPTIONS=--no-deprecation tsx scripts/upload-bylaw-data.ts",
+    "upload:bylaw:supabase": "cross-env DOTENV_CONFIG_PATH=.env.supabase NODE_OPTIONS=--no-deprecation tsx scripts/upload-bylaw-data.ts",
+    "upload:bylaw:supabase:all": "cross-env DOTENV_CONFIG_PATH=.env.supabase NODE_OPTIONS=--no-deprecation tsx scripts/upload-bylaw-data.ts extracted-bylaw-data-1 extracted-bylaw-data-2 extracted-bylaw-data-3 extracted-bylaw-data-4 extracted-bylaw-data-5 extracted-bylaw-data-6 extracted-bylaw-data-7 extracted-bylaw-data-8 extracted-bylaw-data-9",
+    "upload:bylaw:all": "cross-env NODE_OPTIONS=--no-deprecation tsx scripts/upload-bylaw-data.ts extracted-bylaw-data-1 extracted-bylaw-data-2 extracted-bylaw-data-3 extracted-bylaw-data-4 extracted-bylaw-data-5 extracted-bylaw-data-6 extracted-bylaw-data-7 extracted-bylaw-data-8 extracted-bylaw-data-9",
+    "clear:bylaw": "cross-env NODE_OPTIONS=--no-deprecation tsx scripts/clear-bylaw-data.ts"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.968.0",

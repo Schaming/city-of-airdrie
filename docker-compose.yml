@@ -17,7 +17,7 @@ services:
     env_file:
       - .env
     environment:
-      - DATABASE_URI=postgres://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-password}@${POSTGRES_HOST:-postgres}:${POSTGRES_PORT:-5432}/${POSTGRES_DB:-zoningbylawdemo}
+      - DATABASE_URL=postgres://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-password}@${POSTGRES_HOST:-postgres}:${POSTGRES_PORT:-5432}/${POSTGRES_DB:-zoningbylawairdrie}
       - PAYLOAD_SECRET=${PAYLOAD_SECRET:-secret}
       - NODE_OPTIONS=--max-old-space-size=8192
       - WATCHPACK_POLLING=true

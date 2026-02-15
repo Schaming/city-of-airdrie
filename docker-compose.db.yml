@@ -3,7 +3,7 @@ version: '3'
 services:
   postgres:
     image: postgres:16
-    container_name: zoningbylaw_db
+    container_name: zoningbylawairdrie
     ports:
       - '5434:5432'
     volumes:

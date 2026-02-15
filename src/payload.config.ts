@@ -77,7 +77,7 @@ export default buildConfig({
   editor: defaultLexical,
   db: postgresAdapter({
     pool: {
-      connectionString: process.env.DATABASE_URI || process.env.VECTOR_DATABASE_URL || '',
+      connectionString: process.env.DATABASE_URL || process.env.VECTOR_DATABASE_URL || '',
     },
     push: false, // Use migrations instead of auto-sync for better performance
   }),
@@ -97,12 +97,12 @@ export default buildConfig({
   cors: [
     serverURL,
     getServerSideURL(),
-    'https://zoningbylaw-api-211379656884.us-central1.run.app',
+    'https://zoningbylaw-airdrie-211379656884.us-central1.run.app',
   ].filter(Boolean),
   csrf: [
     serverURL,
     getServerSideURL(),
-    'https://zoningbylaw-api-211379656884.us-central1.run.app',
+    'https://zoningbylaw-airdrie-211379656884.us-central1.run.app',
   ].filter(Boolean),
   globals: [Header, Footer],
   plugins: [

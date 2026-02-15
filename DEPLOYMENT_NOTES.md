@@ -36,13 +36,13 @@ These are the specific workarounds and hard-coded values that should be refactor
     *   **Why:** Next.js Image Optimization needs the storage domain at build time. Intermittent environment variable propagation issues made it safer to hard-code this for the initial launch.
     *   **Refactor:** Transition back to using only the `PUBLIC_ASSET_BASE_URL` variable.
 *   **File:** `src/payload.config.ts`
-    *   **Hard-code:** `https://zoningbylaw-api-211379656884.us-central1.run.app` in `cors` and `csrf` arrays.
+    *   **Hard-code:** `https://zoningbylaw-airdrie-211379656884.us-central1.run.app` in `cors` and `csrf` arrays.
     *   **Why:** To ensure immediate permission for browser-side `PATCH`/`POST` requests when `serverURL` variables were unstable.
     *   **Refactor:** Implement a single `ALLOWED_ORIGINS` variable.
 
 ### 2. Build-Time "Dummy" Variables
 *   **File:** `Dockerfile`
-    *   **Workaround:** `export DATABASE_URL="file:./build-dummy.db"` and dummy secrets.
+    *   **Workaround:** `export DATABASE_URL="postgresql://build:build@localhost:1/build"` (dummy) and dummy secrets so the build does not need a real DB.
     *   **Why:** Payload initializes during build. Without a database string, it crashes. We used a local SQLite file to "satisfy" the build.
     *   **Refactor:** Use a dedicated `.env.build` or a Payload "Build Mode" flag.
 *   **File:** `src/payload.config.ts`

@@ -1,13 +1,13 @@
-import Link from 'next/link';
-import configPromise from '@payload-config';
-import { getPayload } from 'payload';
-import { type BylawSection } from '../components/AllBylawsView';
+import Link from 'next/link'
+import configPromise from '@payload-config'
+import { getPayload } from 'payload'
+import { type BylawSection } from '../components/AllBylawsView'
 
-export const dynamic = 'force-dynamic';
+export const dynamic = 'force-dynamic'
 
 async function getSections(): Promise<BylawSection[]> {
   try {
-    const payload = await getPayload({ config: configPromise });
+    const payload = await getPayload({ config: configPromise })
     const result = await payload.find({
       collection: 'bylawSections',
       limit: 200,
@@ -18,16 +18,16 @@ async function getSections(): Promise<BylawSection[]> {
         code: true,
         title: true,
       },
-    });
-    return (result.docs as unknown as BylawSection[]) ?? [];
+    })
+    return (result.docs as unknown as BylawSection[]) ?? []
   } catch (error) {
-    console.error('Failed to fetch sections during build', error);
-    return [];
+    console.error('Failed to fetch sections during build', error)
+    return []
   }
 }
 
 export default async function BylawsIndexPage() {
-  const sections = await getSections();
+  const sections = await getSections()
 
   return (
     <div className="mx-auto max-w-3xl p-4">
@@ -49,5 +49,5 @@ export default async function BylawsIndexPage() {
         ))}
       </ul>
     </div>
-  );
+  )
 }

@@ -14,7 +14,7 @@ if ! docker info > /dev/null 2>&1; then
 fi
 
 # Check if database is already running
-if docker ps --format '{{.Names}}' | grep -q '^zoningbylaw_db$'; then
+if docker ps --format '{{.Names}}' | grep -q '^zoningbylawairdrie$'; then
   echo -e "${GREEN}✓ Database is already running${NC}"
   exit 0
 fi

@@ -181,10 +181,10 @@ async function createDefinition(payload: Payload, term: string, definitionConten
 
 async function run() {
   const dbUrl =
-    process.env.DATABASE_URL || process.env.DATABASE_URI || process.env.TURSO_DATABASE_URL;
+    process.env.DATABASE_URL || process.env.TURSO_DATABASE_URL;
   if (!dbUrl) {
     throw new Error(
-      'Database URL env var is not set. Check payload.config.ts and ensure the matching env var is in .env (e.g. DATABASE_URL or TURSO_DATABASE_URL).',
+      'Database URL env var is not set. Set DATABASE_URL in .env (see payload.config.ts).',
     );
   }
 
