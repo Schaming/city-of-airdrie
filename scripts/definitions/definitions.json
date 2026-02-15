@@ -1,0 +1,2259 @@
+[
+  {
+    "termID": "Abutting",
+    "terms": "Abutting",
+    "text": "Immediately contiguous to or physically touching, and when used with respect to a lot or site that the lot or site physically touches upon another lot, site or piece of land, and shares a property line or boundary with it.",
+    "type": "General",
+    "image": ""
+  },
+
+  {
+    "termID": "Accessory_Building",
+    "terms": "Accessory Building",
+    "text": "A building or structure that is subordinate or incidental to the principal building, and located on the same site as the principal building or use. Typical uses include garages, sheds, and other incidental storage supporting the principal building or use on the site. Where a structure is attached to a principal building on a site by a roof, an enclosed structure, a floor or foundation, or any structure below grade allowing access between the building and the structure, it is considered part of the principal building.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Accessory_Suite",
+    "terms": "Accessory Suite",
+    "text": "A secondary dwelling unit, which may include any of the following:\n(a) Dwelling, Garage Suite\n(b) Dwelling, Garden Suite\n(c) Dwelling, Secondary Suite",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Accessory_Use",
+    "terms": "Accessory Use",
+    "text": "The use of land or buildings which is secondary to the principal use of the same parcel, building, site or dwelling unit, but may not necessarily be subordinate to or form part of the expected service or function of the principal use.\nAct or MGA :\nRefers to the Municipal Government Act , R.S.A. 2000, Chapter M-26 and regulations passed thereunder, as amended or replaced from time to time.\nAdjacent :\nThose lands, or portions of land, that are next to a parcel or other feature. This includes lands that would be next to the parcel or feature if not for an easement, right-of-way, or natural feature (e.g., public thoroughfare, stream, pipeline, public utility lot, powerline, railway).\nThis term is typically used where the parcel is subject to a Development Permit or a subdivision application, but may also be used for other features or points of reference as the context may require (for example, the definition of \"Riparian area\" identifies lands, or portions of land, that are next to streams, rivers, wetlands, lakes, and other water bodies).\nBylaw B-16/2025",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Act_or_MGA",
+    "terms": "Act or MGA",
+    "text":"Refers to the Municipal Government Act, R.S.A. 2000, Chapter M-26 and regulations passed thereunder, as amended or replaced from time to time.",
+    "type": "General",
+    "image":""
+  },
+   {
+    "termID": "Adjacent",
+    "terms": "Adjacent",
+    "text":"Those lands, or portions of land, that are next to a parcel or other feature. This includes lands that would be next to the parcel or feature if not for an easement, right-of-way, or natural feature (e.g., public thoroughfare, stream, pipeline, public utility lot, powerline, railway). \n This term is typically used where the parcel is subject to a Development Permit or a subdivision application, but may also be used for other features or points of reference as the context may require (for example, the definition of \"Riparian area\" identifies lands, or portions of land, that are next to streams, rivers, wetlands, lakes, and other water bodies).",
+    "type": "General",
+    "image":""
+  },
+  {
+    "termID": "Agriculture",
+    "terms": "Agriculture",
+    "text": "An agricultural activity conducted for the gain or reward or in the hope or expectation of gain or reward, and includes but is not limited to:\n(a)  The cultivation of land;\n(b)  The  raising  of  poultry  and  livestock,  including  game-production  animals  within  the  meaning  of  the Livestock Industry Diversification Act ;\n(c)  The raising of fur-bearing animals, birds or fish;\n(d)  The production of agricultural field crops;\n(e)  The production of fruit, vegetables, sod, trees, shrubs or other commercial crops;\n(f) The production of eggs, honey and milk;\n(g)  The operation of agricultural machinery and equipment, including irrigation pumps; and\n(h)  The application of fertilizers, pesticides, fungicides and herbicides for agricultural purposes.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Agricultural_Operation_Limited",
+    "terms": "Agricultural Operation, Limited",
+    "text": "Agricultural activities, including the cultivation or keeping of plants, horses, and small-scale livestock operations on parcels not exceeding 4.0 ha. This use category includes hobby farms, riding arenas, kennels and small farms, but does not include a Cannabis Facility or Cannabis Retail use.\nBylaw B-27/2018",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Agricultural_Operation_General",
+    "terms": "Agricultural Operation, General",
+    "text": "Agricultural activities, including the cultivation or keeping of plants and livestock. Uses would include keeping of livestock and commercial riding arenas, but would not include uses with specific siting considerations, or land and water requirements deemed to be intensive by the Development Authority. This use does not include a confined feeding operation as defined in the Alberta Agricultural Operations Practices Act , an Animal Service use, or a Cannabis Facility or Cannabis Retail use.\nBylaw B-27/2018",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Agricultural_Operation_Major",
+    "terms": "Agricultural Operation, Major",
+    "text": "Agricultural  activities,  including  the  cultivation  or  keeping  of  plants  and  livestock  where  the  intensity  of agriculture operations would have significant land or water demands, and may include off-site impacts that would require mitigation through development. Typical uses might include tree farms, commercial greenhouses and crop production, equestrian centres and health care facilities for farm animals. This use does not include a confined feeding operation as defined in the Alberta Agricultural Operations Practices Act , an Animal Service use, or a Cannabis Facility or Cannabis Retail use.\nBylaw B-27/2018",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Air_SupportedFabricMetal_Covered_Structure",
+    "terms": "Air Supported/Fabric/Metal Covered Structure",
+    "text": "An accessory building where the outer shell is supported by artificially produced and constantly maintained air pressure above local atmospheric level or the outer shell is made of artificial fabric or metal spanned across rigid trusses.  This land use is excluded from all Residential and Mixed Use Districts.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Airport_Operations",
+    "terms": "Airport Operations",
+    "text": "An area of land used either in whole or in part for the arrival and departure or servicing of aircraft, and any building, installation, or equipment used in connection with the operation of the airport.\nThis includes facilities with direct access to the airport airside and which provide supportive services for the airport,  including  but  not  limited  to:  The  Airport  Terminal  Building  and  associated  infrastructure,  regularly scheduled and charter airlines, cargo operators, hangars, aircraft manufacturing, flying clubs, air ambulance, aircraft  service  and  maintenance,  couriers,  aircraft  fuel  operators,  fuel  storage,  maintenance  structures, equipment storage sheds, and air traffic control towers.\nThis does not include other commercial and industrial services which are complimentary to the airport but are not primarily supporting the operation of the airport, do not have airside access, and may or may not have an aviation focus.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Amenity_Area",
+    "terms": "Amenity Area",
+    "text": "Space provided for active or passive recreation and enjoyment of the occupants of a residential development, or for the public when provided with a non-residential use. Amenity area may be for private or shared use, subject to the regulations of this Bylaw.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Ancillary_Use",
+    "terms": "Ancillary Use",
+    "text": "A minor or incidental use that is exclusively devoted to, and forms part of, the expected service or function of the principal use.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Animal_Service_Limited",
+    "terms": "Animal Service, Limited",
+    "text": "A development where animals normally considered as domestic animals are washed, groomed, and/or trained, but the animals may not be boarded and the development must not have any outside enclosures, pens, runs or exercise areas.  Typical uses include veterinary clinics and the retail sales of associated products.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Animal_Service_General",
+    "terms": "Animal Service, General",
+    "text": "A development for which the principal use is the treatment, day-care, or training of domestic animals in an indoor  facility,  and  may  include  accessory  outside  enclosures,  pens,  runs  or  exercise  areas,  and  the supplementary sale of associated products. Animals may not be boarded, except for the purposes of providing health care. Typical uses include veterinary hospitals, animal day-care facilities, and animal shelters.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Animal_Service_Major",
+    "terms": "Animal Service, Major",
+    "text": "A development for which the principal use is the boarding, kenneling, or impoundment of domestic animals in a facility that includes outdoor enclosures, pens, runs and/or exercise areas and may include the supplementary sale of associated products.  Typical uses include boarding and breeding kennels.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Applicant",
+    "terms": "Applicant",
+    "text": "A person who is lawfully entitled to make, and makes, an application for any document, approval or other thing that may be issued, made or done under the authority of this Bylaw.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Approving_Authority",
+    "terms": "Approving Authority",
+    "text": "Development Authority for development matters and Subdivision Authority for subdivision matters.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Area_Redevelopment_Plan_ARP",
+    "terms": "Area Redevelopment Plan (ARP)",
+    "text": "A  statutory  plan  prepared  pursuant  to  Section  634  of  the Municipal  Government  Act that  addresses  the redevelopment or rehabilitation of an established area.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Area_Structure_Plan",
+    "terms": "Area Structure Plan",
+    "text": "A statutory plan prepared pursuant to Section 633 of the Municipal Government Act for the purpose of providing a framework for subsequent subdivision and development of an area of land. This includes:\n(a)  Community Area Structure Plans (CASP) which encompass a large area such as a section of land;\n(b)  Neighbourhood Structure Plans (NSP) which usually cover a quarter-section of land (\u00b1160 acres) and are more detailed than CASPs.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Artificial_Landscaping",
+    "terms": "Artificial Landscaping",
+    "text": "The provision of landscaping elements which are artificial or synthetic.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Artificial_Turf",
+    "terms": "Artificial Turf",
+    "text": "Synthetic sod or grass used for the purposes of providing landscaping for a site.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Artist_Studio",
+    "terms": "Artist Studio",
+    "text": "A development for which the principal use is the creation of works of art or instruction in art, and may include sales of works of art as an ancillary use.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Auctioning_Service",
+    "terms": "Auctioning Service",
+    "text": "A development intended for the auctioning of goods and equipment, including the temporary storage of such goods and equipment. This use does not include farmers markets or second-hand retail stores.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Awning",
+    "terms": "Awning",
+    "text": "A cloth-like or lightweight metal shelter projecting from and supported entirely by the exterior wall of a building;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Back_of_Curb",
+    "terms": "Back of Curb",
+    "text": "The edge of the curb that is closest to the property line.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Balcony",
+    "terms": "Balcony",
+    "text": "An unenclosed horizontal structure adjoining a building above the first storey floor level and intended for use as a private outdoor amenity space.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Basement",
+    "terms": "Basement",
+    "text": "A portion of a building that is located wholly or partially below grade.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Bay",
+    "terms": "Bay",
+    "text": "(a)  A self-contained unit or part of a building which can be sold or leased for individual occupancy, or\n(b)  A portion of a building used for a specific function, such as vehicle loading or service.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Bed_and_Breakfast",
+    "terms": "Bed and Breakfast",
+    "text": "The use of a dwelling where temporary accommodation is provided to the public for remuneration, for up to 14 days with four (4) or fewer guest rooms, with the intent to provide guest services such as meals.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Buffer",
+    "terms": "Buffer",
+    "text": "Trees, shrubs, earth berming, open space, fencing or a combination thereof to provide visual screening, sound attenuation and/or separation between sites and districts.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Building",
+    "terms": "Building",
+    "text": "Anything constructed or placed on, in, over or under land, but does not include a highway or road or a bridge that forms part of a highway or road.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Building_Footprint",
+    "terms": "Building Footprint",
+    "text": "The land area covered by buildings at the foundation, but does not include eaves.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Building_Mass",
+    "terms": "Building Mass",
+    "text": "The three dimensional bulk of a building including the height, width and depth.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Business_Support_Service",
+    "terms": "Business Support Service",
+    "text": "Development used to provide support services to businesses.  These services are characterised by one or more  of  the  following  features:  the  use  of  mechanical  equipment  for  printing,  duplicating,  binding  or photographic  processing,  the  provision  of  office  maintenance  or  custodial  services,  the  provision  of  office security, or the sale, rental, repair or servicing of office equipment, furniture and machines.  Typical uses include printing and graphics establishments, janitorial firms and ancillary business-related equipment sales and repair facilities.\nC",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Campground",
+    "terms": "Campground",
+    "text": "Development of land for public or private use, which has been planned and improved for the use of holiday trailers, recreational vehicles, motor homes, tents or campers and other similar recreational vehicles used for temporary overnight accommodation. A Campground may include related Accessory Buildings, including but not limited to administrative offices, eating and cooking shelters, laundry facilities, fire pits, storage, lighting, and  water  supply  and  servicing  facilities.  A  Campground  is  not  to  be  used  as  year  round  storage  or accommodation for residential use, and the length of stay is not intended to extend beyond a maximum of 180 consecutive or total days.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Cannabis_Retail",
+    "terms": "Cannabis Retail",
+    "text": "A development for which the use is the retail sale of cannabis to the public, as authorized by a license issued by the Province of Alberta and regulated by the Alberta Gaming, Liquor & Cannabis Commission (AGLC). This includes the retail sale of other goods and merchandise deemed ancillary by the Development Authority.\nBylaw B-27/2018 Bylaw B-07/2019",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Cannabis_Facility_Limited",
+    "terms": "Cannabis Facility, Limited",
+    "text": "A  development allowing  the  use  of  land,  buildings  or  structures  for  the  purpose  of  cultivation,  processing, packaging, testing, destroying, storing and/or shipping of cannabis and associated products as authorized by a license or registration issued by the Federal Government, and where the surface area of cannabis plants does not exceed 200m\u00b2.\nBylaw B-62/2021",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Cannabis_Facility_General",
+    "terms": "Cannabis Facility, General",
+    "text": "A  development allowing  the  use  of  land,  buildings  or  structures  for  the  purpose  of  cultivation,  processing, packaging, testing, destroying, storing and/or shipping of cannabis and associated products as authorized by a license or registration issued by the Federal Government.\nBylaw B-27/2018\nBylaw B-62/2021",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Canopy",
+    "terms": "Canopy",
+    "text": "A structure extending from the outside wall of a building normally used for the purpose of shielding a part of the building from the sun.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Cantilever",
+    "terms": "Cantilever",
+    "text": "A structural portion of a building floor, excluding eaves and roof projections, bay windows and fireplace chases, which extends beyond the foundation wall and is not structurally supported from below.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Carport",
+    "terms": "Carport",
+    "text": "A structure designed for the storage of vehicles, usually attached to the principal building and at least partially unenclosed. A Carport may be treated as an Accessory Building or considered to be an extension of the Principal Building as the context may require.\nBylaw B-26/2023",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Cemetery",
+    "terms": "Cemetery",
+    "text": "Development of a parcel of land primarily as a landscaped open space for the entombment of the deceased, and  may  include  accessory  developments  including  cineraria,  columbaria,  and  mausoleums.  Typical  uses include memorial parks, burial grounds and gardens of remembrance.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Change_of_Use_Permit",
+    "terms": "Change of Use Permit",
+    "text": "A Development Permit required for a change in use of a building or portion of a building.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Chattel",
+    "terms": "Chattel",
+    "text": "A moveable item of personal property.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Child_Care_Limited",
+    "terms": "Child Care, Limited",
+    "text": "An  accessory  use  that  may  or  may  not  be  licensed  by  the  Province  of  Alberta  to  provide  personal  care, maintenance, supervision or education, for up to six (6) children under the age of 12 years. This includes neighbourhood daycare centres, kindergartens, and nursery schools.\nBylaw B-31/2023",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Child_Care_General",
+    "terms": "Child Care, General",
+    "text": "A development licensed by the Province of Alberta to provide personal care, maintenance, supervision, or education, for  more than six (6) children  under the age of 12 years. This includes licensed facilities within residential buildings as well as commercial community daycare centres and kindergartens but does not include an institution operated by or under the authority of the Director of Child Welfare.                         Bylaw B-31/2023",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Child_Care_Residential",
+    "terms": "Child Care, Residential",
+    "text": "Deleted",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Child_Care_Major",
+    "terms": "Child Care, Major",
+    "text": "An institutional building licensed by the Province of Alberta and operated under the authority of the Director of Child Welfare to provide personal care, maintenance, supervision or education for children under the age of 12 years; or any Child Care facility licensed by the Province of Alberta to provide personal care, maintenance, supervision or education, for children in an institutional format similar to a school.\nBylaw B-31/2023\nBylaw B-31/2023\nBylaw B-31/2023",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "City",
+    "terms": "City",
+    "text": "The Corporation of the City of Airdrie, or the area contained within the boundaries of the City of Airdrie, in the Province of Alberta.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Clearance",
+    "terms": "Clearance",
+    "text": "The shortest vertical distance between the underside of an object and grade.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Commercial_Outdoor_Patio",
+    "terms": "Commercial Outdoor Patio",
+    "text": "A temporary or permanent outdoor area, attached to and forming part of a restaurant, caf\u00e9, bar, microbrewery, or other business for the purpose of outdoor seating and extending the functional space of the principal use.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Commercial_Riding_Arena",
+    "terms": "Commercial Riding Arena",
+    "text": "A commercial business which may be used by clients other than the owners or occupants of the site on which the building is located for the training and exercising of horses, but is not used for horse shows, rodeos or similar events to which there is a fee to participate in or to use the facilities.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Commercial_School",
+    "terms": "Commercial School",
+    "text": "A development used for the training and instruction in a specific trade, skill or service for the financial gain of the individual or company owning and/or operating the school.  Typical uses include small-scale adult education facilities  as  well  as  specialized  schools  providing  training  in  business,  dance,  music,  administration,  and personal service.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Community_Garden",
+    "terms": "Community Garden",
+    "text": "A site or part of a site that does not contain a residence on which vegetables or fruits (but not cereal grains or animals of any kind) are cultivated for consumption or distribution on a not-for-profit basis.  Community gardens may include the provision for the keeping of bees.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Community_Service_Facility",
+    "terms": "Community Service Facility",
+    "text": "A development used by the public or public groups for social, cultural or community activities.  Typical uses are large, destination facilities and include multi-purpose recreation facilities, private clubs, YMCA/YWCA, tourist information/interpretive centres, museums, and libraries.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Compatibility",
+    "terms": "Compatibility",
+    "text": "The characteristics of different uses or activities or designs which, in the opinion of the Development Authority, allow them to be located near or adjacent to each other in harmony. Some elements affecting compatibility include: height; scale; mass and bulk of buildings, signs, and other structures.  Other characteristics include volumes  of  pedestrian  and  vehicular  traffic,  circulation,  access  and  parking  impacts.    Other  important characteristics that affect compatibility are: landscaping, lighting, noise, odor and architecture.  Compatibility does not mean 'same as'.  Rather, compatibility refers to the sensitivity of development proposals in maintaining the character of existing developments.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Condominium",
+    "terms": "Condominium",
+    "text": "The individual ownership of a unit in a multi-unit structure as defined in the Condominium Property Act , R.S.A. 2000, Chapter C-22, as amended or replaced from time to time.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Container_Shipping_Container_or_Sea_Can",
+    "terms": "Container, Shipping Container or Sea Can",
+    "text": "An accessory sealed unit used for the land and sea transport of goods and materials, which may also be used for storage.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Council",
+    "terms": "Council",
+    "text": "The elected Council of the City of Airdrie.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Corner_Visibility_Triangle",
+    "terms": "Corner Visibility Triangle",
+    "text": "A triangular area on a corner parcel located 1.05m above the road surface and formed by the two curb lines and a straight line which intersects them 7.5m in each direction from the corner where they meet.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Cul-de-sac",
+    "terms": "Cul-de-sac",
+    "text": "A street or passage that is closed at one end.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Curb_Cut",
+    "terms": "Curb Cut",
+    "text": "The lowering of a curb, sidewalk or boulevard to provide vehicular access to a parcel or lot.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Dangerous_or_Hazardous_Goods",
+    "terms": "Dangerous or Hazardous Goods",
+    "text": "A product, substance or organism listed in the Dangerous Goods Transportation and Handling Act and by the Major Industrial Accidents Council of Canada (MIACC), as amended.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Data_Centre",
+    "terms": "Data Centre",
+    "text": "The industrial use of a building, dedicated space within a building, or a group of buildings to house computer systems and associated components, such as telecommunications and storage systems. It generally includes backup  components  and  infrastructure  for  power  supply,  data  communication  connections,  environmental controls (e.g. air conditioning, fire suppression) and various security devices.\nBylaw B-13/2021",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Day_Care",
+    "terms": "Day Care",
+    "text": "See 'Child Care'",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Deck",
+    "terms": "Deck",
+    "text": "An uncovered horizontal structure with a surface height greater than 0.60 metres above grade at any point that is intended for use as an outdoor amenity space. Any stairs or landing connected to the deck that gives access from the structure to a yard or building is considered part of the deck for the regulations of this Bylaw. For similar structures equal to or less than 0.60m above grade, see 'Patio'",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Density",
+    "terms": "Density",
+    "text": "The number of Dwelling Units on a parcel, lot, or development site expressed in units per hectare. Methods for calculating density for the purposes of determining compliance with this Bylaw are provided in Section 7.3",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Derelict",
+    "terms": "Derelict",
+    "text": "In a very poor condition or non-functioning as a result of disuse and neglect.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Development",
+    "terms": "Development",
+    "text": "(a)  An excavation or stockpile and the creation of either of them;\n(b)  A building or an addition to, or replacement or repair of a building and the construction or placing in, on, over or under land of any of them.\n(c)  A change of use of land or a building or an act done in relation to land or a building that results in or is likely to result in a change in the use of the land or building, or;\n(d)  A change in the intensity of use of land or a building or an act done in relation to land or building that results in or is likely to result in a change in the intensity of use of the land or building;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Development_Agreement",
+    "terms": "Development Agreement",
+    "text": "An agreement between a developer or a property owner and the City that defines the terms and conditions under which a development must be carried out in accordance with the Municipal Government Act , as amended from time to time.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Development_Authority",
+    "terms": "Development Authority",
+    "text": "A Development Authority established pursuant to the Act, as amended, and in accordance with the provisions of this Bylaw. Development Authority includes the following in accordance with the powers and authority set out in this Bylaw:\n(a)  A Development Officer\n(b)  The Municipal Planning Commission\n(c)  Airdrie City Council\nBylaw B-30/2024",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Development_Completion_Certificate",
+    "terms": "Development Completion Certificate",
+    "text": "A document or certificate issued by the Development Officer confirming that the requirements and conditions of a Development Permit have been met.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Development_Officer",
+    "terms": "Development Officer",
+    "text": "The Chief Administrative Officer or his delegate(s) who is responsible for carrying out the duties listed in this Bylaw and the Subdivision and Development Authority Bylaw;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Development_Permit",
+    "terms": "Development Permit",
+    "text": "A document authorizing the commencement of a development pursuant to the provisions of this Bylaw.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Development_Site_Servicing_Plan_DSSP",
+    "terms": "Development Site Servicing Plan (DSSP)",
+    "text": "A  plan  or  collection  of  plans  which  outline  the  details  of  any  changes  to  grading,  servicing,  stormwater management or other City infrastructure associated with a proposed development. A DSSP is reviewed to ensure  that  the  grading  and  servicing  of  a  site  is  designed  and  installed  to  meet  the  requirements  of  all applicable codes and design standards.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Discontinued",
+    "terms": "Discontinued",
+    "text": "The point in time when substantive construction activity or use of a building or land ceases.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Discretionary_Use",
+    "terms": "Discretionary Use",
+    "text": "A use of a site or a building for which a Development Authority may in its discretion issue a Development Permit to an applicant, if the application meets the purpose and intent of the land use district, the provisions of this Bylaw and makes good planning sense with regard to Compatibility.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Display",
+    "terms": "Display",
+    "text": "An activity associated with furthering or contributing to the growth and prosperity of a business enterprise and located in areas such as shopping malls, private buildings, yards and parking areas.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Domestic_Animal",
+    "terms": "Domestic Animal",
+    "text": "An animal, such as a dog, cat, bird, rodent (including a rabbit), fish, or turtle, that is commonly kept in the home for pleasure rather than for commercial purposes.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Double-Fronting_site",
+    "terms": "Double-Fronting site",
+    "text": "A site on which a front yard setback is required onto more than one road, but also includes a site which abuts two public roads, except lanes, which are parallel or nearly parallel where abutting the site.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Drive-Through",
+    "terms": "Drive-Through",
+    "text": "A land use which is accessory to the principal use which offers goods and/or services to a person in a parked or stationary vehicle by way of a service window or structure, and may include but is not limited to an automated banking machine with vehicle access or a fast food drive-through business and coffee-services.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Driveway",
+    "terms": "Driveway",
+    "text": "That portion of a lot used to provide access from a street or lane to a parking space or spaces and which has been graded, constructed and maintained with concrete, asphalt or other hard surface and dustless materials at the discretion of the Development Authority. This does not include a parking pad.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Dwelling_or_Dwelling_Unit",
+    "terms": "Dwelling or Dwelling Unit",
+    "text": "A building or portion of a building consisting of one (1) or more rooms operated or intended to be operated as a residence for a household, containing cooking, sleeping and sanitary facilities only for that unit. Part or all of the dwelling may be constructed through prefabrication or modular assembly.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Dwelling_Back-to-Back_Townhouse",
+    "terms": "Dwelling, Back-to-Back Townhouse",
+    "text": "A building containing six (6) or more dwelling units as its principal uses, separated from each other by two or more party walls from foundation to roof, which must include a rear wall constructed as a party wall. Each dwelling unit must have its own separate entrance. This includes:\n(a)  Freehold townhouses (back-to-back) developed on fee simple lots where each individual unit is located on its' own lot (i.e., one dwelling unit per lot) and where the lots are created by a plan of subdivision or;\n(b)  Condominium townhouses (back-to-back) that are or will be established as separate units within a condominium  plan  or  strata  space  plan  and  may  include  shared  common  areas  of  the  overall development site, facilities, and/or landscaping.\nBylaw B-61/2021",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Dwelling_Duplex",
+    "terms": "Dwelling, Duplex",
+    "text": "A building containing only two (2) dwellings, with one dwelling placed over the other in whole or in part where each dwelling has its own separate entrance. This type of development is designed and constructed as two dwellings at the time of initial construction of the building. This use does not include Secondary Suites.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Dwelling_Garage_Suite",
+    "terms": "Dwelling, Garage Suite",
+    "text": "A secondary dwelling unit that is located above a detached garage or attached to the side or rear of a detached Garage at grade. A Garage Suite is accessory to a Dwelling, Single Detached, has an entrance separate from the vehicle entrance to the Garage, and contains living, cooking, sleeping, and sanitation facilities which are separate from those of the principal dwelling located on the site. This Land Use does not include a Dwelling, Secondary Suite or a Dwelling, Garden Suite. This land use may also be referred to in this Bylaw as 'Garage Suite.'",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Dwelling_Garden_Suite",
+    "terms": "Dwelling, Garden Suite",
+    "text": "A single-storey secondary dwelling unit that is located in a building separate from a Dwelling, Single Detached on the same site. A Garden Suite contains living, cooking, sleeping, and sanitation facilities which are separate from those of the principal dwelling located on the site. This Land Use does not include a Dwelling, Secondary Suite or a Dwelling, Garage Suite. This land use may also be referred to in this Bylaw as 'Garden Suite.'",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Dwelling_Live-Work_Unit",
+    "terms": "Dwelling, Live-Work Unit",
+    "text": "A business operated from a dwelling by the principal resident of the dwelling where the business is located on the ground floor and faces the road, and the associated dwelling unit does not contain a home business.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Dwelling_Secondary_Suite",
+    "terms": "Dwelling, Secondary Suite",
+    "text": "A secondary dwelling unit that is located within and accessory to a Dwelling, Single Detached or Dwelling, Semi-Detached. A Secondary Suite has an entrance separate from the entrance for the principal dwelling and contains living, cooking, sleeping, and sanitation facilities which are separate from those of the principal dwelling located on the site. This Land Use does not include a Dwelling, Garage Suite or a Dwelling, Garden Suite. This land use may also be referred to in this Bylaw as 'Secondary Suite.'\nBylaw B-30/2024",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Dwelling_Semi-Detached",
+    "terms": "Dwelling, Semi-Detached",
+    "text": "A building comprising two (2) dwelling units joined side by side with a common wall and each dwelling unit having at least one separate entrance.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Dwelling_Single_Detached",
+    "terms": "Dwelling, Single Detached",
+    "text": "A building containing one (1) dwelling.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Dwelling_Townhouse",
+    "terms": "Dwelling, Townhouse",
+    "text": "A building containing three (3) or more units as its principal use, each with a direct access from the finished grade. Each dwelling is separate from the adjoining dwelling by a vertical party wall. This includes:\n(a)  Freehold townhouses developed on fee simple lots where each individual unit is located on its' own lot (i.e., one dwelling unit per lot) and where the lots are created by a plan of subdivision or;\n(b)  Condominium townhouses that are or will be established as separate units within a condominium plan or strata space plan and may include shared common areas of the overall development site, facilities, and/or landscaping.\nBylaw B-11/2021\nE",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Easement",
+    "terms": "Easement",
+    "text": "A legal right of use over another person's property which provides the easement holder with specific rights with respect to access or use of that property.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Eave_line",
+    "terms": "Eave line",
+    "text": "The horizontal line on a building that marks the extreme edge of the overhang of a roof and where there is no overhang, the eave line shall be the horizontal line at the intersection of the wall and roof.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Educational_Institution_Private",
+    "terms": "Educational Institution, Private",
+    "text": "A development for which the principal use is to provide academic and technical instruction which does not meet the definition of school as per the reserve land provisions of the Municipal Government Act and which may or may not offer courses of study equivalent to those offered on a public school.\nThis use may also include ancillary uses such as school cafeterias and eating establishments, book stores, retail sales related to the educational function, recreation facilities and day care facilities. This use does not include Commercial Schools or a Home Business.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Educational_Institution_Public",
+    "terms": "Educational Institution, Public",
+    "text": "A development for which the principal use is to provide academic and technical instruction grades K to 12 as defined by Provincial legislation, which may be located on reserve land as per the Municipal Government Act . This  use  may  also  include  ancillary  uses  such  as  administration  offices,  school  cafeterias  and  eating establishments, book stores, and retail sales related to the educational function, recreation facilities and day care facilities.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Educational_Institution_Major",
+    "terms": "Educational Institution, Major",
+    "text": "A development for which the principal use is to provide education, training or instruction for post-secondary students and may include community colleges, technical and vocational schools and universities. This use may include  dormitories,  and  ancillary  uses  such  as  administration  offices,  cafeterias,  eating  and  drinking establishments, book stores, and retail sales related to the educational function, recreation facilities and day care facilities. This use definition does not include Commercial schools.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Enclosed",
+    "terms": "Enclosed",
+    "text": "A space or structure that is surrounded by two or more walls, and a roof, beam structure, or other of enclosure, which is 1.2m in height or greater as measured from grade.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Entertainment_Adult",
+    "terms": "Entertainment, Adult",
+    "text": "Any premise or parts thereof in which products or services are provided which are of a sexual intent and shows or displays nudity with an erotic or sexually explicit intent. These uses include:\n(a)  Adult mini-theatres, which are any premise wherein live performances, film or video or other electronic or photographic reproductions are performed and shown as a principal use or accessory to some other business activity which is conducted on the premises;\n(b)  Erotic dance clubs or strip club;\n(c)  Retail stores where greater than 20% of the leasable floor area is used to sell, lease or rent 'X' rated adult video tapes, digital, electronic or photographic reproductions, or other adult toys and accessories, other than clothing or apparel, or;\n(d)  Services of which a principal feature or characteristic is the nudity or partial nudity of any person.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Entertainment_Gaming",
+    "terms": "Entertainment, Gaming",
+    "text": "A development, for which the principal use is to provide patrons the opportunity to engage in games of chance, and includes a bingo hall and a casino, but does not include an Adult Entertainment facility.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Entertainment_General",
+    "terms": "Entertainment, General",
+    "text": "A development for amusement and leisure pastimes and may incorporate a restaurant as an accessory use. This  term  refers  to  uses  such  as  movie  theatres  and  cinemas,  amusement/video  arcades,  pool  halls,  and bowling alleys.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Environmental_Site_Assessment",
+    "terms": "Environmental Site Assessment",
+    "text": "An investigation in relation to a parcel of land to determine the environmental condition of the property, prepared in accordance with the Alberta Environmental Site Assessment Standard and the Environmental Protection and Enhancement Act , as amended.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Equestrian_Centre",
+    "terms": "Equestrian Centre",
+    "text": "Public facilities (buildings, shelters or other structures) at which horses are exercised or trained, training in equestrian skills or equestrian competitions or shows are held.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Essential_Public_Service",
+    "terms": "Essential Public Service",
+    "text": "A development that is necessary for the continued health, safety, or welfare of the residents of the City.  This includes fire stations, ambulance services, police stations and similar facilities.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Existing",
+    "terms": "Existing",
+    "text": "In place as of the date of adoption of this Bylaw or any amendments to the Bylaw.\nF",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Fa\u00e7ade",
+    "terms": "Fa\u00e7ade",
+    "text": "The exterior outward face of a building. Buildings on the corner of two roads present two public fa\u00e7ades.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Farmers_Market",
+    "terms": "Farmers Market",
+    "text": "A development used for the sale of new or used goods, crafts and food products by multiple vendors renting tables and space either in or out of an enclosed building.  Vendors may vary from day to day, although the general layout of space to be rented out stays the same.  This includes operations that are of a seasonal nature.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Fence",
+    "terms": "Fence",
+    "text": "A vertical physical barrier constructed to provide visual screening or to prevent access, and excludes golf ball barrier nets on private lots which abut a golf course.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Financial_Service",
+    "terms": "Financial Service",
+    "text": "A development where a building or portion of a building used primarily for the banking or lending of money. This use encompasses a broad range of organizations that manage money, and includes credit unions, banks, credit card companies, insurance companies, accountancy companies, consumer finance companies, stock brokerages and investment funds. This use does not include Pawn Shops.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Firewall",
+    "terms": "Firewall",
+    "text": "A construction assembly that acts as a barrier against the spread of fire constructed in accordance with the current Alberta Building Code.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Flood_Fringe",
+    "terms": "Flood Fringe",
+    "text": "Those lands which are identified on Flood Hazard Mapping established by the Province of Alberta that may be impacted by a 1:100-year flood event. The flood fringe is generally shallower and flows more slowly than in the floodway.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Floodway",
+    "terms": "Floodway",
+    "text": "Those lands which are identified on Flood Hazard Mapping established by the Province of Alberta that may be impacted by a 1:100-year flood event. The floodway is the area where flows are deepest, fastest and most destructive, and typically includes the main channel of a stream and a portion of the adjacent overbank area.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Floor_Area",
+    "terms": "Floor Area",
+    "text": "Any finished floor area intended for human occupancy.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Floor_Area_Ratio_FAR",
+    "terms": "Floor Area Ratio (FAR)",
+    "text": "The numerical value obtained by dividing the gross  floor area of all buildings  on  a site,  excluding  parking structures and parking below grade, by the site area.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Foundation",
+    "terms": "Foundation",
+    "text": "The lower portion of a building usually concrete or masonry and includes the footings, which transfer the weight of loads on a building to the ground.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Frontage_Building",
+    "terms": "Frontage, Building",
+    "text": "The uninterrupted length of a building or series of buildings facing the same public street.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Frontage_Site",
+    "terms": "Frontage, Site",
+    "text": "The linear distance of a property line or site boundary, measured along a street.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Funeral_Service_Limited",
+    "terms": "Funeral Service, Limited",
+    "text": "A development for which the principal use is the preparation of the deceased for burial or cremation and the holding of funeral services.  This use does not include a crematorium.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Funeral_Service_General",
+    "terms": "Funeral Service, General",
+    "text": "A development for which the principal use is the preparation of the deceased for burial or cremation and the holding of funeral services and may include a crematorium.\nG",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Garage",
+    "terms": "Garage",
+    "text": "An accessory building or part of a principal building, which is used for the storage of motor vehicles, as the context may require.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Garage_Width",
+    "terms": "Garage Width",
+    "text": "The horizontal distance between the furthest corners of the building fa\u00e7ade designed to accommodate vehicles, whether recessed or not, that directly faces the street from which it is accessed. This does not include portions of such fa\u00e7ade which are recessed and are not designed to accommodate vehicles.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Garden_Centre",
+    "terms": "Garden Centre",
+    "text": "A commercial development for which the principal use is the growing, storage, wholesale and/or retail sale of plants of any kind and materials and equipment used for gardening or lawn care and may include a greenhouse and accessory uses related to the storing, displaying and selling of gardening, nursery and related products. This use does not include a Cannabis Facility or Cannabis Retail use.\nBylaw B-27/2018",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Garden_Centre_Seasonal",
+    "terms": "Garden Centre, Seasonal",
+    "text": "A temporary development, which may or may not include fencing and/or outdoor storage, erected on a site of an existing retail store for the purpose of selling gardening and related goods on a seasonal basis. This use does not include a Cannabis Facility or Cannabis Retail use.\nBylaw B-27/2018",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Government_Service",
+    "terms": "Government Service",
+    "text": "A development for which the principal use is to provide municipal, provincial or federal government services to the public. Typical uses include taxation and employment offices, courthouses, post offices, school division headquarters, and social services. This use does not include educational institutions or correctional facilities.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Grade",
+    "terms": "Grade",
+    "text": "The ground elevation established for  the purpose  of regulating the  number  of  storeys and the height of  a building.  The building grade shall be the elevation adjacent to the walls of the building if the finished grade is level.  If the ground is not entirely level the grade shall be determined by averaging the elevation of the ground for each face of the building.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Greenhouse",
+    "terms": "Greenhouse",
+    "text": "An accessory building used for the growing, acclimating, propagating, and harvesting fruits and vegetables and ornamental plants. This use does not include a Cannabis Facility or Cannabis Retail use.\nBylaw B-27/2018",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Gross_Floor_Area",
+    "terms": "Gross Floor Area",
+    "text": "The total  floor  area  of  a  building  contained  within  the  outside  surface  of  exterior  and  basement  walls  and includes all floors except parking levels.\nBylaw B-50/2021",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Gross_Vehicle_Weight",
+    "terms": "Gross Vehicle Weight",
+    "text": "The total weight of a vehicle, including its maximum allowable load.\nH",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Hard_Surfacing",
+    "terms": "Hard Surfacing",
+    "text": "Asphalt, concrete, paving stone, or similar material that is used in the construction of a driveway or parking area.  Gravel is not considered hard surfacing, unless determined appropriate by the Development Authority as the context may require.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Health_Care_Limited",
+    "terms": "Health Care, Limited",
+    "text": "A development for which the principal use is to provide medical and health care services on an outpatient basis only,  and  includes  community  health  clinics,  medical  labs,  walk-in  clinics,  medical  and  dental  offices,  and counseling services. This use includes counseling services relating to cannabis use where the sale of cannabis is not permitted, as well as respite and day-time care facilities where overnight accommodation is infrequent and permitted only at the discretion of the Development Authority.\nBylaw B-27/2018",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Health_Care_General",
+    "terms": "Health Care, General",
+    "text": "A development for which the principal use is to provide medical and health care services on both an in-patient and  out-patient  basis  and/or  provides  provincially  licensed  extended  medical  care.  Services  may  be  of  a preventative,  diagnostic,  treatment,  therapeutic,  rehabilitative  or  counseling  nature.  Typical  uses  include medical  centres,  emergency  care  centres  and  may  include  accessory  uses  such  as  dispensaries  selling pharmaceutical and medical supplies, as well as hospices, respite, and day-time care facilities where overnight accommodation may be provided.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Heavy_Vehicle_Sales_and_Leasing",
+    "terms": "Heavy Vehicle Sales and Leasing",
+    "text": "A development used for the retail sale, service and rental of new or used commercial and industrial vehicles, exceeding a gross vehicle weight of 4,500 kilograms and including boats, horse trailers, farm vehicles and equipment and trucks. This use may also include incidental storage and maintenance services as well as the sale of parts and accessories. This use does not include sales and leasing of RVs.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Heavy_Vehicle_Storage_and_Repair",
+    "terms": "Heavy Vehicle Storage and Repair",
+    "text": "A development used for the storage, service, cleaning or repair of heavy vehicles, machinery or mechanical equipment typically used in construction and industrial operations with no sales or rental of equipment. This use does not include storage, service, and repair of RVs.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Height",
+    "terms": "Height",
+    "text": "The vertical distance between the average grade established by the Development Authority and the highest point of a building excluding any device or addition not structurally essential to the building (e.g. ventilating fan, skylight, steeple, chimney, smoke stack, flagpole, antenna).",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Home_Business_Limited",
+    "terms": "Home Business, Limited",
+    "text": "A temporary development allowing the secondary use of a residential dwelling for the purposes of home office by the occupant of the dwelling.  This use does not permit business associated visits; any additional non-resident employees within the dwelling; or any additional parking or storage outside of the area designated within the dwelling.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Home_Business_General",
+    "terms": "Home Business, General",
+    "text": "A temporary development allowing the secondary use of a residential dwelling for the purpose of a business by the occupant of the dwelling, which includes business-associated visits to the residence.\nBylaw B-26/2023",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Home_Business_Major",
+    "terms": "Home Business, Major",
+    "text": "A temporary development allowing the secondary use of a residential dwelling for the purpose of a business by the occupant of the dwelling, which includes business-associated visits to the residence.\nBylaw B-26/2023",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Hospital",
+    "terms": "Hospital",
+    "text": "An institutional development used to provide in-patient and out-patient health care to the public, usually in a campus-type setting. Typical developments include comprehensive health centres and full-service hospitals.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Hostel",
+    "terms": "Hostel",
+    "text": "The use of a building to provide temporary accommodation for remuneration, and provides at least one of sleeping, cooking, living, or sanitary facilities in a shared format.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Hotel",
+    "terms": "Hotel",
+    "text": "A development used for the provision of rooms or suites for temporary sleeping accommodation where the rooms have access to a common interior corridor and may be equipped with individual kitchen facilities, and may include a manager's suite, accessory food and beverage establishments, meeting rooms, personal service and retail stores.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Hotel_and_Conference_Centre",
+    "terms": "Hotel and Conference Centre",
+    "text": "A development used for the provision of rooms or suites for temporary accommodation where the rooms have access from a common interior corridor  and  may  be  equipped  with  individual  kitchen  facilities,  and  where permanent  facilities  are  provided  for  meetings,  seminars,  conventions,  weddings  or  other  special  events. Facilities  may  include  a  manager's  suite,  auditoriums,  concert  halls,  lecture  halls,  meeting  rooms,  and/or conference rooms.\nI-J-K",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Illumination",
+    "terms": "Illumination",
+    "text": "Lighting by artificial means.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Indoor_Recreation_Limited",
+    "terms": "Indoor Recreation, Limited",
+    "text": "A development for which the principal use is to provide recreation and sport facilities conducted indoors within a limited space. Typical uses include gyms and yoga or cross-fit studios with a capacity of 50 or fewer people.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Indoor_Recreation_General",
+    "terms": "Indoor Recreation, General",
+    "text": "A development for which the principal use is to provide recreation and sport facilities that are conducted indoors. Typical uses include recreation centres, indoor swimming pools, tennis courts, play fields, hockey rinks, and gyms, and may include sports stadiums.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Industrial_Agriculture_and_Production",
+    "terms": "Industrial Agriculture and Production",
+    "text": "The  use  of  land,  buildings  or  structures  as  an  industrial  operation  for  the  cultivation,  processing,  testing, destruction,  packaging,  storage,  and  shipping  of  agricultural  products  or  supporting  businesses  in  such activities. Typical uses would include commercial greenhouses and crop production. This use does not include Cannabis Facility or Cannabis Retail uses, confined feeding operations as defined in the Alberta Agricultural Operations Practices Act and does not include an Animal Service.\nBylaw B-27/2018",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Industrial_Distribution",
+    "terms": "Industrial Distribution",
+    "text": "The use of a building and site primarily for the transfer or shipping of goods and merchandise. It includes trucking terminals, distribution centres, and inter-modal transfer areas.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Industrial_Manufacturing_and_Operations",
+    "terms": "Industrial Manufacturing and Operations",
+    "text": "Development for which the principal use is:\n(a)  Processing of raw or finished materials;\n(b)  The  manufacturing,  assembly,  making,  preparing,  inspecting,  finishing,  treating,  altering,  repairing, storing or adapting for sale of any goods, substance, article, thing or service.\n(c)  Cleaning, servicing, repairing or testing of materials, goods, and equipment normally associated with industrial or commercial businesses;\n(d)  Crushing, dismantling, processing or sorting recyclable or reusable waste products provided that these activities do not involve the use of chemicals or the application of heat; and/or\n(e)  Storage or shipping of materials, goods or equipment.\nThis land use may also include accessory indoor display, office, technical or administrative support areas or sales accessory to the industrial uses, but does not include a Cannabis Facility or Cannabis Retail use.\nBylaw B-27/2018",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Industrial_Manufacturing_Limited",
+    "terms": "Industrial Manufacturing, Limited",
+    "text": "A development for which the principal use is secondary manufacturing, assembly, and/or altering of consumer and capital goods within an enclosed building which does not exceed 500m\u00b2 in Floor Area. This includes limited facilities for the storage or shipping of associated materials, goods, or equipment.\nBylaw B-13/2021",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Industrial_Service_and_Sales",
+    "terms": "Industrial Service and Sales",
+    "text": "A development for which the principal use is to provide sales or services to agricultural, industrial or business clients,  and  includes  agricultural  supplies,  services  and  sales,  building  supply  centres,  bulk  fuel  sales, contractor's offices, large equipment and vehicles sales and services, lumber yards and wholesale centres.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Intensity",
+    "terms": "Intensity",
+    "text": "The relative degree of utilization or capacity of a site or building.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Issuance",
+    "terms": "Issuance",
+    "text": "The date a Development Permit or order is issued by the Development Authority.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Kennel",
+    "terms": "Kennel",
+    "text": "The keeping of dogs for breeding purposes or the boarding of dogs over three months of age.\nL",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Laboratory_Limited",
+    "terms": "Laboratory, Limited",
+    "text": "The use of a building, or part of a building for non-hazardous scientific or technical work including research and development, quality control, testing, teaching or analysis. This may include client visits to the facility but does not include Health Care facilities as defined in this Bylaw.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Laboratory_General",
+    "terms": "Laboratory, General",
+    "text": "The use of a building, or part of a building for scientific or technical work, which may be hazardous, including research and development, quality control, testing, teaching or analysis. Such work may involve the use of chemicals including dangerous goods, pathogens and harmful radiation, or processes including electrical or mechanical work which could be hazardous. This includes such support areas as instrument and preparation areas, laboratory stores and any offices attached or adjacent to the laboratory. Client visits to the facility are prohibited. This use does not include Health Care facilities as defined in this Bylaw.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Land_Use",
+    "terms": "Land Use",
+    "text": "The purpose or activity for which a site or parcel or its buildings are designed, arranged, developed or intended, or for which it is occupied or maintained.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Landing",
+    "terms": "Landing",
+    "text": "A horizontal structure providing access to a deck or building as the context may require, and is not designed to provide amenity space for the property.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Landscaped_Area",
+    "terms": "Landscaped Area",
+    "text": "That portion of a site which is required to be landscaped and may not be used for parking, storage, or display of items for sale.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Landscaping",
+    "terms": "Landscaping",
+    "text": "The preservation or modification of a site through the use of any or all of the following elements:\n(a) Soft Landscaping elements such as trees, shrubs, hedges, plants, lawn, ground cover and ornamental plantings;\n(b) Hard  Landscaping consisting  of  non-vegetative  materials  such  as  bricks,  stone  work,  rocks, decorative  pavers,  excluding  monolithic  concrete  or  asphalt.  This  excludes  areas  for  parking  of vehicles, regardless of the surface materials used.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Lane",
+    "terms": "Lane",
+    "text": "A narrow roadway intended chiefly to give access to the rear of a building or parcel of land, and is also known as an alley as defined in the Traffic Safety Act of Alberta, as amended.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Large_Vehicles",
+    "terms": "Large Vehicles",
+    "text": "A vehicle, other than a recreational vehicle, with a gross vehicle weight stated by the manufacturer, vehicle signage, or vehicle registration, to be in excess of 4,500 kilograms, with one or more of the following characteristics:\n(a)  tandem axles;\n(b)  a passenger capacity more than 15 persons; or\n(c)  dual wheels where the vehicle includes a flat deck or other form of utility deck; or that can be generally described as a bus, cube van, dump truck, flatbed truck, tractor, trailer, or tractor trailer combination.\nBylaw B-26/2023",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Livestock",
+    "terms": "Livestock",
+    "text": "Horses, cattle, sheep, swine, fur-bearing animals raised in captivity, game-production animals within the meaning of the Livestock Industry Diversification Act, live poultry and bees, except wild boars., unless otherwise permitted under an Urban Agriculture program or a similar City initiative.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Loading_Space",
+    "terms": "Loading Space",
+    "text": "An off-street space on the same site as a building or group of buildings, for the temporary parking of a large vehicle while commodities are being loaded or unloaded.\nBylaw B-26/2023",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Lot",
+    "terms": "Lot; Parcel",
+    "text": "(a)  A quarter section;\n(b)  A river lot shown on an official plan, as defined in the Surveys Act , that is filed or lodged in a land titles office;\n(c)  A settlement lot shown on an official plan, as defined in the Surveys Act , that is filed in a Land Titles office;\n(d)  A part of land in a certificate of title if the boundaries of the part are described in the certificate of title other than by reference to a legal subdivision; or\n(e)  A part of a parcel of land described in a certificate of title if the boundaries of the part are described in a certificate of title by reference to a plan of subdivision.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Lot_Area",
+    "terms": "Lot Area",
+    "text": "The area contained within the boundaries of a lot as shown on a plan of subdivision or described in a Certificate of Title.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Lot_Depth",
+    "terms": "Lot Depth",
+    "text": "The shortest horizontal distance between the front and rear lot lines of a site.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Lot_Line",
+    "terms": "Lot Line",
+    "text": "any of the following:\n(a) Lot Line, Front: A property line separating a lot from an abutting road other than a lane. In the case of a  corner  lot,  the  front  lot  line  shall  be  determined  by  the  Development  Authority  with  the  intent  of ensuring that setbacks are regulated in a manner that is consistent with the proposed land uses and appropriate for the design of the site.\n(b) Lot Line, Rear : Either the property line of a lot which is the furthest from and opposite the front lot line or, where there is no such property line, the point of intersection of any property lines other than a front lot line which is the furthest from and opposite the front lot line.\n(c) Lot Line, Side : The property line of a lot other than a front lot line or rear lot line.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Lot_Type",
+    "terms": "Lot Type",
+    "text": "any of the following:\n(a) Corner Lot: A lot situated at the junction of two or more roads which, at their point of junction, form an angle of no more than 135 degrees.\n(b) Flag Lot: A land parcel having the configuration of an extended flag and pole. The pole represents access to the site which is usually located to the rear of another lot fronting a main road.\n(c) Double-Frontage Lot: Any lot that faces roads on both its front and rear boundaries, and is adjacent to more than one interior lot on the same side.\n(d) Interior Lot: A lot bounded by a road at its front, but not its rear or either of its sides.\n(e) Irregular Lot: A lot that does not fit any of the other descriptions in this Section.\n(f) Pie Lot: A lot which is generally configured such that its width at the rear lot line is greater than at its front lot line.\n(g) Reverse Pie Lot: A lot which is generally configured such that its width at the rear lot line is less than at its front lot line.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Lot_Width",
+    "terms": "Lot Width",
+    "text": "The horizontal distance between the side property lines of a parcel:\n(a)  Measured eight (8) metres from the front lot line along the shortest side property line for pie-shaped or reverse pie-shaped lots in a residential district;\n(b)  Measured at a right angle to the shortest side property line for all other circumstances.\nBylaw B-24/2024",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Low_Impact_Development",
+    "terms": "Low Impact Development",
+    "text": "A comprehensive land planning and engineering design approach to stormwater management with a goal of maintaining the pre-development hydrologic regime of a watershed or watersheds.\nM",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Manufactured_Home",
+    "terms": "Manufactured Home",
+    "text": "A detached dwelling unit that is exclusively constructed through prefabrication or modular assembly and placed in a comprehensively-planned residential area where it is intended to allow part or all of the planned area to have this type of residential development. This type of development is not a recreational vehicle, and is not intended to be placed or developed to provide temporary industrial/project accommodation.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Master_Site_Plan",
+    "terms": "Master Site Plan",
+    "text": "A document created to support a development application on a Mixed-Use, Commercial or Industrial site, intended to address how the development relates and interfaces with its surrounding area, and how it meets any City planning policies and standards applicable to the site.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Microbrewery",
+    "terms": "Microbrewery",
+    "text": "A  development  for  which  the  principal  use  contains  both  production  or  processing  facilities  for  alcoholic beverages including wine, beer, and others, as well as a restaurant and/or retail sales of beverages produced on-site. This Use does not include a distillery.\nBylaw B-25/2019",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Mixed_Use_Development",
+    "terms": "Mixed Use Development",
+    "text": "Development that is designed to accommodate a mix of one or more commercial, residential and/or industrial uses within a single site subject to compatibility. The use mix may be horizontal or vertical.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Mixed_Use_Development_Limited",
+    "terms": "Mixed Use Development, Limited",
+    "text": "A building comprising a combination of up to two (2) dwelling units and commercial space, primarily intended for offices, retail uses, childcare and personal services.\nBylaw B-13/2021",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Mixed_Use_Development_General",
+    "terms": "Mixed Use Development, General",
+    "text": "A  building  comprising  a  combination  of  three  (3)  or  more  dwelling  units  and  commercial  space,  primarily intended for offices, retail uses, childcare and personal services.\nBylaw B-13/2021",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Mobile_Vendor",
+    "terms": "Mobile Vendor",
+    "text": "A portable cart, truck or similar arrangement located on a lot for the sale of food, beverage, goods, or services, which may be removed each day at the end of business.\nBylaw B-18/2022 Bylaw B-28/2023",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Motel",
+    "terms": "Motel",
+    "text": "A development for which the principal use is to provide temporary sleeping accommodation in rooms or suites with separate access to the outdoors from each room or suite and may also include a manager's suite.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Motor_Vehicle",
+    "terms": "Motor Vehicle",
+    "text": "A motor vehicle as defined in the Traffic Safety Act of Alberta, as amended.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Multi-Residential_Development",
+    "terms": "Multi-Residential Development; Stacked Townhouse",
+    "text": "A building or part of a building, other than a 'Townhouse Dwelling', containing three (3) or more dwelling units arranged in any horizontal or vertical configuration which may have separate entrances at grade or a shared entrance area through a common vestibule. Typical examples include apartment buildings.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Multi-Unit_Development",
+    "terms": "Multi-Unit Development",
+    "text": "A development of three or more dwellings, commercial or industrial uses developed on a site that includes common property, such as, but not limited to, communal parking areas, driveways, private roadways, amenity areas or maintenance areas that are shared. Typical multi-unit developments include rental properties and conventional condominium developments, developed in accordance with the Condominium Property Act , as amended. Also may be commonly referred to as a 'condominium development'",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Municipal_Development_Plan_or_MDP",
+    "terms": "Municipal Development Plan or MDP",
+    "text": "A statutory plan adopted by bylaw under Section 632 of the Municipal Government Act. The City of Airdrie's municipal development plan is referred to as the Airdrie City Plan.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Municipal_Planning_Commission",
+    "terms": "Municipal Planning Commission",
+    "text": "A body of citizen representatives and/or members of Council responsible for carrying out the duties listed in this Bylaw as a form of Development Authority, and for carrying out other duties as may be assigned in the terms of reference for this body.\nN",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Nightclub",
+    "terms": "Nightclub",
+    "text": "A use licensed under the Liquor Act where minors are prohibited at all times and liquor is sold and consumed on the premises and where entertainment is provided to patrons in the form of a dance floor, live music stage, live performances or recorded music in areas greater than 30.0 square metres.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Non-Conforming_Building",
+    "terms": "Non-Conforming Building",
+    "text": "A building:\n(a)  That is lawfully constructed or lawfully under construction at the date the land use bylaw affecting the building or the land on which the building is situated becomes effective; and\n(b)  That on the date the land use bylaw becomes effective does not, or when constructed will not, comply with this bylaw.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Non-Conforming_Use",
+    "terms": "Non-Conforming Use",
+    "text": "A lawful specific use:\n(a)  Being made of land or a building or intended to be made of a building lawfully under construction at the date a land use bylaw affecting the land or building becomes effective; and\n(b)  That on the date the land use bylaw becomes effective does not, or in the case of a building under construction will not comply with this bylaw.\nO",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Occupancy",
+    "terms": "Occupancy",
+    "text": "The use or intended use of a building or part thereof for the shelter of persons or property . Where used in this Bylaw this is a general term and is not to be confused with Occupancy permits or requirements under the Alberta Building Code .",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Office",
+    "terms": "Office",
+    "text": "A building that provides professional, management, administrative, consulting and similar services. This Land Use would include the office of an architect, engineer, insurance agent, lawyer, travel agent or similar profession but does not include a Financial Service, Government Service, or Health Care facility.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Outdoor_Display_Area",
+    "terms": "Outdoor Display Area",
+    "text": "An area of a commercial or industrial site used for the outdoor display of goods or equipment.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Outdoor_Recreation_Facility",
+    "terms": "Outdoor Recreation Facility",
+    "text": "A development for which the principal use is to provide active recreation and sports facilities that are conducted outdoors.  Typical uses include golf courses, outdoor swimming pools, sport fields, tennis courts, unenclosed ice surfaces or rinks, athletic fields, bowling greens and fitness trails, and may include sports stadiums.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Outline_Plan",
+    "terms": "Outline Plan",
+    "text": "A detailed plan prepared in accordance with the policies outlined in an Area Structure Plan, which focuses on smaller areas of land (between 40-160 acres) and provides detail as to how the land will be further subdivided, serviced and built upon. An Outline Plan typically provides the next level of detail in terms of community design, infrastructure requirements and community design that was undertaken in the ASP.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Overlay",
+    "terms": "Overlay",
+    "text": "Additional regulations superimposed on specific areas of the Land Use District Map, which supersede or add to the regulations of the underlying Land Use District.\nP-Q",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Parapet_Wall",
+    "terms": "Parapet Wall",
+    "text": "That part of any wall extending above the roof line, or a wall that serves as a guard at the edge of a balcony or roof.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Park",
+    "terms": "Park",
+    "text": "Land developed for passive recreational  activities  that  do  not  require  major  buildings  or  facilities  and  may include picnic areas, playgrounds, pedestrian and bicycle paths, or landscaped areas.  Uses may also include associated public washrooms and maintenance facilities less than 10.0 square metres in area.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Parking_Lot",
+    "terms": "Parking Lot",
+    "text": "An area of land used principally for the parking of vehicles.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Parking_Pad",
+    "terms": "Parking Pad",
+    "text": "A hard surfaced area intended to accommodate part or all of the required off-street parking space(s) for a residential land use where a garage, parking lot or other parking facilities may or may not be otherwise provided. This does not include a driveway.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Parking_Space",
+    "terms": "Parking Space",
+    "text": "That portion of a parking lot or structure that is intended to accommodate a single parked vehicle, and which meets the minimum required dimensions and area otherwise determined within this Bylaw.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Parking_Structure",
+    "terms": "Parking Structure",
+    "text": "A structure designed and erected to provide space for the parking of automobiles.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Patio",
+    "terms": "Patio",
+    "text": "An uncovered horizontal structure with a surface height, at any point, no greater than 0.60 metres above grade, intended for use as an outdoor amenity space. For similar structures greater than 0.60m above grade, see 'Deck'",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Pawn_Shop",
+    "terms": "Pawn Shop",
+    "text": "The use of a building or a portion of a building where money is lent or transferred in conjunction with the exchange of merchandise. Additionally, merchandise may be sold to the public according to an agreement with the  owner  of  the  merchandise.  This  Use  does  not  include  the  sale  of  used  vehicles,  recreation  craft  or construction and industrial equipment, and does not include second-hand and consignment stores and other businesses of a similar nature.\nBylaw B-25/2019",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Permanent_Structure",
+    "terms": "Permanent Structure",
+    "text": "A building that is permanently fixed to a foundation below grade and is connected to utility services such as electrical, gas and plumbing.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Permitted_Use",
+    "terms": "Permitted Use",
+    "text": "The use of land or a building which is listed in the column titled 'Permitted Uses' in a table of uses for each of the respective land use districts in this Bylaw. A Development Permit must be issued for a Permitted Use if the application otherwise conforms to the standards and requirements of this Bylaw.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Personal_Service",
+    "terms": "Personal Service",
+    "text": "A development used for the provision of personal services to an individual which are related to their care, wellbeing or appearance. This use includes such uses as barber-shops, hairdressers, tattoo parlours, spas, and beauty salons, tanning salons, shoe repair shops, but does not include health services or adult entertainment facilities.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Plot",
+    "terms": "Plot",
+    "text": "See 'Lot.'",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Plot_Plan",
+    "terms": "Plot Plan",
+    "text": "A review conducted by the City of Airdrie during a Building Permit application where Planning staff checks a site plan for development which is exempt from the Development Permit process to ensure compliance with minimum Bylaw requirements.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Porch",
+    "terms": "Porch; Verandah",
+    "text": "A covered, unenclosed structure typically attached to the front or sides of a residential dwelling at the ground floor entry level and extending along the outside of the building.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Principal_Building_or_Principal_Use",
+    "terms": "Principal Building or Principal Use",
+    "text": "A building or use that:\n(a)  Occupies the major or central portion of the site;\n(b)  Is the primary or main building or use among one or more buildings or uses on a site; or\n(c)  Constitutes, by reason of its use, the main purpose for which the building or site is used.\nThere shall be no more than one (1) principal building or use on each site, unless permitted otherwise in this Bylaw.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Projection",
+    "terms": "Projection",
+    "text": "Structures extending from the wall of a building. Common structures include balconies, terraces, alcoves, bay or oval windows and chimneys.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Promotion_or_Display",
+    "terms": "Promotion or Display",
+    "text": "An activity associated with furthering or contributing to the growth and prosperity of a business enterprise and located in areas such as shopping malls, private buildings, yards and parking areas.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Public_Assembly_Limited",
+    "terms": "Public Assembly, Limited",
+    "text": "A building used for public gatherings and assemblies with an assembly area capacity of less than 50 people. This use includes assembly areas used for religious, charitable, educational or social activities, but does not include an Educational Institution.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Public_Assembly_General",
+    "terms": "Public Assembly, General",
+    "text": "A building used for public gatherings and assemblies with an assembly area capacity of between 50 and 250 people. This use includes assembly areas used for religious, charitable, educational or social activities, but does not include an Educational Institution.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Public_Assembly_Major",
+    "terms": "Public Assembly, Major",
+    "text": "A building used for public gatherings and assemblies with an assembly area capacity of more than 250 people. This use includes assembly areas used for religious, charitable, educational or social activities, but does not include  an  Educational  Institution.  Typical  uses  include  auditoriums,  meeting  halls,  convention  centres, churches,  mosques,  and  monasteries.  This  may  incorporate  accessory  uses  such  as  community  gardens, community service facilities, cemeteries, and temporary outdoor events.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Public_Floor_Area",
+    "terms": "Public Floor Area",
+    "text": "The portion of floor area designed exclusively for public use and does not include the horizontal areas devoted to mechanical rooms, utility rooms, public washrooms, stairwells, elevators, escalators, common walkways and non-leasable basement space.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Public_Transportation",
+    "terms": "Public Transportation",
+    "text": "Publicly owned, operated and/or funded transit and transportation facilities.\nR",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Recreational_Vehicle_RV",
+    "terms": "Recreational Vehicle (RV)",
+    "text": "A motor vehicle that is primarily designed to provide temporary living quarters for recreational travel or camping. This includes motorhomes, travel trailers, fifth-wheel trailers, tent trailers, campers (whether or not the camper is attached to a vehicle), and boats, but does not include a manufactured home.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "RV_Sales_and_Service",
+    "terms": "RV Sales and Service",
+    "text": "A development used for the retail sale, service, and rental of recreational vehicles. This use does not include RV storage or the sale or service of other types of vehicles.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "RV_Storage",
+    "terms": "RV Storage",
+    "text": "A development where the principal use is the storage of recreational vehicles. This use does not include the sale, display, or production of recreational vehicles.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Recycling_Depot",
+    "terms": "Recycling Depot",
+    "text": "A development used for the collection and temporary storage of recyclable material, including bottles, cans, newspapers and similar household goods for transfer, as permitted by the Government of Alberta.  All storage shall be contained within enclosed storage containers or buildings.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Renewable_Energy_System",
+    "terms": "Renewable Energy System",
+    "text": "A method for producing energy, which may or may not be used by a development or portion of a development, and which does not depend on non-renewable energy sources. Typical examples of renewable energy systems include, but are not limited to, Solar, Wind, Hydroelectricity, and Geothermal energy.\nDeleted",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Residential_Sales_Centre",
+    "terms": "Residential Sales Centre",
+    "text": "A building or structure used for the purpose of marketing residential land or buildings, including office and administrative functions pertaining to that purpose.\nBylaw B-26/2021\nBylaw B-26/2021",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Residential_Show_Home",
+    "terms": "Residential Show Home",
+    "text": "A building or structure taking the form of a future dwelling unit, and used for a limited period of time for the purpose of marketing residential land or buildings.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Restaurant",
+    "terms": "Restaurant",
+    "text": "A development where the primary purpose of the facility is the sale of prepared foods and beverages to the public, for consumption within the premises or off the site.  Typical uses are restaurants, neighbourhood pubs and bars, wine bars and lounges, but does not include Nightclubs.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Retail_Store_Convenience",
+    "terms": "Retail Store, Convenience",
+    "text": "A development used for the retail sale of goods required by the public on a day to day basis in an enclosed building which does not exceed 335m\u00b2 in Public Floor Area.  Typical uses include small food stores, drug stores, and variety stores. This use may also include a second-hand or consignment store.\nBylaw B-25/2019",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Retail_Store_General",
+    "terms": "Retail Store, General",
+    "text": "A  development  used  for  the  retail  sale  of  groceries,  beverages,  household  goods,  furniture,  appliances, clothing, hardware, printed matter, confectionary, tobacco, pharmaceutical and personal care items, automotive parts and accessories, office equipment, stationery and similar goods within an enclosed building. This use may also include a second-hand or consignment store.\nBylaw B-25/2019\nRetail Store, Liquor means;\nA retail store licensed by the Province to sell alcoholic beverages to the public, for consumption elsewhere. Typical uses include liquor stores, wine and beer stores.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Rezoning",
+    "terms": "Rezoning",
+    "text": "A type of Land Use Bylaw amendment involving a change to a land use district or districts applied to a site, or sites, also known as a Land Use amendment.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Riding_Arena",
+    "terms": "Riding Arena",
+    "text": "A building used by the owners or occupants of the site on which the building is located for the training and exercising of horses, but is not used for horse shows, rodeos or similar events to which there is a fee to participate in or to use the facilities.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Riparian_area",
+    "terms": "Riparian area",
+    "text": "The lands adjacent to streams, rivers, wetlands, lakes, and other water bodies, where the vegetation and soils show evidence of being influenced by the presence of water. Riparian areas are the green zones around lakes, rivers, and wetlands. They are the transitional zone between surface water and the drier uplands and play a vital role in the healthy functioning of both.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Road",
+    "terms": "Road",
+    "text": "Any public road, including the boulevards, sidewalks and improvements, but excluding a lane or walkway.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Salvage_Yard",
+    "terms": "Salvage Yard",
+    "text": "Land or buildings where vehicles, tires and vehicle components are disassembled repaired, stored or wrecked usually for parts or scrap metal re-sale.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Screening",
+    "terms": "Screening",
+    "text": "The use of landscaping, fences or berms to visually separate areas, sites or uses.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Security_Suite",
+    "terms": "Security Suite",
+    "text": "An attached or detached structure that is accessory to the construction of a development or use, or a permanent development or use on a site, may include all the elements of a dwelling unit, for the purpose of providing surveillance for the maintenance and safety of the development or use(s) on site.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Setback",
+    "terms": "Setback",
+    "text": "The minimum horizontal distance to a lot line or another feature, as may be described elsewhere within this Bylaw, to which the development, or an aspect of the development, as the context may require, must adhere. A setback is not a yard. A setback may include any of the following:\n(a) Setback, Corner OR Side (Exterior): A minimum distance prescribed from a side lot line facing a road on a corner lot to which the development, or an aspect of the development must adhere.\n(b) Setback, Exterior : A minimum distance prescribed from any lot line facing a road.\n(c) Setback, Front: A minimum distance prescribed from a front lot line.\n(d) Setback, Interior :  A minimum distance prescribed from any lot line which does not face a road, as determined by the Development Authority.\n(e) Setback, Rear : A minimum distance prescribed from a rear lot line.\n(f) Setback, Side (Interior) : A minimum distance prescribed from a side lot line which does not face a road.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Shopping_Centre",
+    "terms": "Shopping Centre",
+    "text": "A type of commercial multi-unit development where one or more freestanding buildings are developed on a site incorporating shared parking and a number of retail and service uses.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Similar_Use",
+    "terms": "Similar Use",
+    "text": "A use of a site or building in a district which is, in the opinion of the Development Authority, is so similar to a Permitted Use or Discretionary Use in that district that it meets the intent of the Council for the development of that district as set out in the purpose and intent statement, but does not include a use that is specifically defined as a Permitted or Discretionary Use in any other district.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Site",
+    "terms": "Site",
+    "text": "A lot, or a portion of a lot, or a portion of lots, or multiple lots being reviewed for the purposes of Development Approval, as the context may require.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Site_Area",
+    "terms": "Site Area",
+    "text": "The area of land contained within boundaries of a site as shown on a site plan.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Site_Coverage",
+    "terms": "Site Coverage",
+    "text": "The total horizontal area of all covered buildings or structures on a site that are located at 0.6m above grade, including parking pads required under the 'Parking, Access and Connectivity' section of a land use district, and any covered or enclosed projections (i.e. verandas, porches, enclosed/covered raised decks), expressed as a percentage of the total lot area. This definition does not include:\n(a)  Steps, eaves, cornices and similar projections;\n(b)  Driveways, aisles, surface parking spaces except where outlined above, and;\n(c)  Unenclosed amenity features as outlined in Section 7.26 (Projections and Encroachments).\nBylaw B-17 2024",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Site_Depth",
+    "terms": "Site Depth",
+    "text": "The horizontal distance between the front and rear site boundaries.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Site_Plan",
+    "terms": "Site Plan",
+    "text": "The document that describes how a parcel of land is to be improved.  It includes the outlines of all structures and site improvements, such as buildings, driveways, parking lots, and landscaping.  A Site Plan accompanies all Development Permit applications.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Site_Width",
+    "terms": "Site Width",
+    "text": "The average horizontal distance between the side boundaries of a site measured at 8 meters from the front property line.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Special_Recreation_Facility",
+    "terms": "Special Recreation Facility",
+    "text": "A development or site for which the principal use is to provide a venue for outdoor recreational activities that may cause an off-site impact to other lands, and includes a place where vehicles of any kind are raced, a firearm shooting range, outdoor paintball or a remote controlled vehicle course.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Statutory_Plan",
+    "terms": "Statutory Plan",
+    "text": "An  inter-municipal  development  plan,  a  municipal  development  plan,  an  area  structure  plan  and  an  area redevelopment plan adopted by a municipality under the Municipal Government Act , as amended.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Storage_Facility_Indoor",
+    "terms": "Storage Facility, Indoor",
+    "text": "A site exclusively utilized for the storage of goods, materials, or equipment within buildings or structures. Typical uses include warehouses and other commercial or industrial facilities where no accessory display or retail of products is provided. This use does not include RV Storage.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Storage_Facility_Outdoor",
+    "terms": "Storage Facility, Outdoor",
+    "text": "A site exclusively utilized for the storage of goods, materials, or equipment on bare-land. Un-serviced buildings or structures may be included with this use and are considered accessory buildings.  Typical uses include heavy equipment storage compounds and pipe yards. This use does not include RV Storage.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Storage_Facility_Public",
+    "terms": "Storage Facility, Public",
+    "text": "A development for which the principal use is to lease portions of a site and/or buildings to the general public for the storage of goods. This includes mini-storage, and self-storage facilities, and outdoor storage limited to vehicle or boat storage. This use does not include RV Storage.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Storey",
+    "terms": "Storey",
+    "text": "That portion of a building, which is situated between the top of any floor and the top of the floor next above it. If there is no floor above, the storey is the portion of the building, which is situated between the top of any floor and the ceiling above it.  If the top of the floor directly above a basement is more than 1.7m above grade, it shall be considered a storey for the purpose of this Bylaw.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Street",
+    "terms": "Street",
+    "text": "See 'Road'",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Stripping_and_Grading",
+    "terms": "Stripping and Grading",
+    "text": "A development comprising any work, operation or activity that results in a disturbance of the earth including, but not limited, to the removal of top soil, berming, excavating, trenching, backfilling, re-contouring, and grading.\nBylaw B-57/2021",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Structure",
+    "terms": "Structure",
+    "text": "Anything constructed with a fixed location on the ground or attached to something having a fixed location on the ground and supplementary to a building or buildings on a site, including, but not exclusive to walls, light standards, fences and signs.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Subdivision",
+    "terms": "Subdivision",
+    "text": "The division of a parcel of land into one or more smaller parcels by a plan of subdivision or other instrument, or as defined in the Municipal Government Act , as amended.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Subdivision_Authority",
+    "terms": "Subdivision Authority",
+    "text": "A Subdivision Authority established pursuant to the Act, as amended, and in accordance with the provisions of this Bylaw and the Act. The Subdivision Authority includes the following in accordance with the powers and authority set out in this Bylaw:\n(a)  A Subdivision Officer\n(b)  The Municipal Planning Commission\n(c)  Airdrie City Council",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Subdivision_Officer",
+    "terms": "Subdivision Officer",
+    "text": "The Chief Administrative Officer or delegate(s) who is responsible for carrying out the duties listed in this Bylaw and the Act.\nBylaw B-04/2024\nBylaw B-04/2024",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Subdivision_Servicing_Agreement",
+    "terms": "Subdivision Servicing Agreement",
+    "text": "An agreement between a developer or a property owner and the City that defines the terms and conditions under which subdivision must be carried out in accordance with the Municipal Government Act, as amended from time to time.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Supportive_Housing_Limited",
+    "terms": "Supportive Housing, Limited",
+    "text": "A type of long-term accommodation integrated with other residential land uses in a neighbourhood context providing  on-site  professional  care  and  supervision,  where  services  might  include  regular  housekeeping, nursing care, personal care, health, wellness, and recreational support for three (3) to five (5) residents (clients). This use does not include an institution such as extended medical treatment centres, detention and correction facilities, or temporary care housing.\nBylaw B-33/2024",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Supportive_Housing_General",
+    "terms": "Supportive Housing, General",
+    "text": "A long-term institutional care facility providing residential accommodation in addition to services for professional care, supervision and health treatment for six (6) or more residents (clients). This includes large-scale centres and facilities where the scale and type of services require special siting considerations or may impact adjacent lands. This use does not include an institution such as extended medical treatment centres, detention and correction facilities, or temporary care housing.\nBylaw B-33/2024\nT",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Tandem",
+    "terms": "Tandem",
+    "text": "In reference to parking configurations, to have two parking stalls required for the same land use arranged with one in front of another and facing the same direction.\nBylaw B-30/2024",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Tele-Communication_Facility",
+    "terms": "Tele-Communication Facility",
+    "text": "The development of an Industry Canada regulated communication facilities including radio towers, television, microwave and cell towers and accessory structures. This does not include small-scale antenna structures typical of residential districts or amateur radio facilities.\n(See also - Special Use Regulations)",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Temporary_Development",
+    "terms": "Temporary Development",
+    "text": "A use or development that may or may not require a Development Permit, as the context may require, and which may not remain in place up to, but not longer than, three consecutive calendar years at the discretion of the Development Authority, unless otherwise defined in this Bylaw.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Temporary_Care_Housing_Limited",
+    "terms": "Temporary Care Housing, Limited",
+    "text": "A short-term accommodation integrated with other residential land uses in a neighbourhood context providing temporary residence in addition to support services with the intent to assist individuals in developing the skills and resources necessary to move into permanent housing. This housing option can accommodate for three (3) to five (5) residents (clients) and has a specific time limit, usually ranging from a few months to a couple of years.  This use does not include an institution such as extended medical treatment centres, detention and correction facilities, or supportive housing.\nBylaw B-33/2024",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Temporary_Care_Housing_General",
+    "terms": "Temporary Care Housing, General",
+    "text": "A short-term institutional care facility providing residential accommodation in addition to support services for six (6)  or  more  residents  (clients)  with  the  intent  to  assist  individuals  in  developing  the  skills  and  resources necessary to move into permanent housing. This includes large-scale centres and facilities where the scale and type of services require special siting considerations or may impact adjacent lands. This use does not include  an  institution  such  as  extended  medical  treatment  centres,  detention  and  correction  facilities,  or supportive housing .\nBylaw B-33/2024",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Temporary_Event",
+    "terms": "Temporary Event",
+    "text": "An  organized  public  activity  that  is  temporary  in  nature  and  is  in  keeping  with  the  context  and  scale  of development anticipated for the district and its surrounding land uses.  Typical examples of this use may include organized sporting events, community festivals, trade shows, ceremonies, and outdoor faith services.  This use does not include a Special Recreation Facility.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Temporary_Storage",
+    "terms": "Temporary Storage",
+    "text": "The storage of goods and materials on a temporary basis for which the length of time is determined at the discretion of the Development Authority.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Third-Party",
+    "terms": "Third-Party",
+    "text": "A person(s) conducting a land use on a site who is not the owner of that site.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Unenclosed",
+    "terms": "Unenclosed",
+    "text": "An outdoor space or structure which is surrounded by not more than 2 walls, nor a lattice, or other enclosing device whatsoever above 1.2 meters in height, as measured from the floor.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Unit_Type",
+    "terms": "Unit Type",
+    "text": "any of the following:\n(a) Corner Unit: In a multi-unit development, a unit facing onto the intersection of two or more roads which, at their point of junction, form an angle of no more than 135 degrees.\n(b) End Unit: In a multi-unit development, a unit that only shares one common wall with an adjoining unit, but not a corner unit.\n(c) Interior Unit: In a multi-unit development, a unit that shares common walls with adjoining units along two or more sides.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Urban_Agriculture",
+    "terms": "Urban Agriculture",
+    "text": "A development allowing the secondary use of a parcel for the purposes of growing plants and, in some cases, the keeping of backyard hens in urban and suburban areas. This use does not include commercial operations, intensive agriculture, and confined feeding operations. Where an Urban Agriculture use is proposed to include keeping of backyard hens, the use includes the following elements:\n(a) Hens: female chickens over four (4) months of age\n(b) Henhouse: a structure that houses hens at night and includes places for laying eggs.\n(c) Run: an attached open area that is fenced for hens to range in.\n(d) Coop: the combined facilities of a Henhouse and Run.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Utility",
+    "terms": "Utility",
+    "text": "The development of a system or works used to provide one or more of the following for public or private benefit, consumption, convenience or use:\n(a)  Water treatment and distribution;\n(b)  Irrigation;\n(c)  Alternate energy structures such as micro-wind or solar facilities;\n(d)  Drainage;\n(e)  Waste water collection, treatment and disposal facilities;\n(f) Fuel;\n(g)  Electric power;\n(h)  Heat;\n(i) Street lighting;\n(j) Waste management;\n(k)  Public transportation operated by or on behalf of the municipality;\n(l) Stormwater management facilities, including ponds, wetlands and dry ponds, or;\n(m) Any building required to operate the utility as defined in the Municipal Government Act , as amended.\nV",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Variance",
+    "terms": "Variance",
+    "text": "A variation or relaxation of a development regulation or other development requirement under this Bylaw.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Vehicle_Sales_and_Leasing",
+    "terms": "Vehicle Sales and Leasing",
+    "text": "A  development  used  for  the  retail  sale  or  rental  of  new  or  used  motor  vehicles  including  automobiles, motorcycles,  snowmobiles,  tent  trailers,  boats,  travel  trailers,  and  horse  trailers,  together  with  incidental maintenance  services  and  sale  of  parts.  This  use  includes  automobile  dealerships,  rental  agencies  and motorcycle dealerships, but does not include sale and leasing of RVs, large trucks or manufactured homes. The gross weight of vehicles in this use class shall not exceed 4,500 kilograms.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Vehicle_Service_Limited",
+    "terms": "Vehicle Service, Limited",
+    "text": "A  development  used  for  the  servicing,  washing  and  repairing  of  vehicles  with  three  bays  or  less,  and accommodating no more than 12 vehicles in all bays and queueing spaces. This use includes the sale of gasoline, other petroleum products and/or a limited range of automotive parts and accessories and may also include a Retail Store, convenience. This use does not include servicing or repair of RVs.\nBylaw B-16/2025",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Vehicle_Service_General",
+    "terms": "Vehicle Service, General",
+    "text": "A development used for the servicing, washing and repairing of vehicles, the sale of gasoline and petroleum products  and  sale,  installation  or  servicing  of  related  accessories  and  parts.  This  use  may  also  include  a Restaurant and/or a Retail Store, Convenience.  This use does not include servicing or repair of RVs.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Vehicle_Service_Major",
+    "terms": "Vehicle Service, Major",
+    "text": "A  development  where  mechanical  repairs,  painting  and  structural  changes  or  repairs  are  made  to  motor vehicles  including  automobiles,  trucks,  farm  equipment,  recreational  vehicles.  This  use  includes  the  sale, installation, servicing or storage of related accessories and parts.  This includes auto body shops, paint shops, repair shops. This use does not include servicing or repair of RVs.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Vehicle_Service_Bulk_Fuel_Depot",
+    "terms": "Vehicle Service, Bulk Fuel Depot",
+    "text": "A development used for the bulk storage and distribution of petroleum products and may include card lock retail sales. This use does not include servicing or repair of RVs.",
+    "type": "Land Use",
+    "image": ""
+  },
+
+  {
+    "termID": "Warehouse_Sales",
+    "terms": "Warehouse Sales",
+    "text": "A development used for the wholesale or retail sale of a limited range of bulky goods from within an enclosed building where the size and nature of the principal goods being sold typically require large floor areas for direct display to the purchaser or consumer.  This use includes developments where the principal goods sold are bulky  items  such  as  furniture,  floor  coverings,  major  appliances  and  building  materials.  This  use  does  not include developments used for the retail sale of foods or a broad range of goods for personal or household use.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Waste_Management_Facility",
+    "terms": "Waste Management Facility",
+    "text": "A site used primarily for the storage, processing, treatment and disposal of solid wastes.  Typical uses include sanitary  landfills,  garbage  transfer  and  compacting  stations,  waste-to-energy  stations  and  facilities  for  the recycling of materials.",
+    "type": "Land Use",
+    "image": ""
+  },
+  {
+    "termID": "Wetland",
+    "terms": "Wetland",
+    "text": "All lands that are partly or wholly saturated with water on a seasonal or permanent bases, to the extent that it provides a distinct ecosystem, typically characterized by water-loving plants. A wetland may or may not be taken as Environmental Reserve in accordance with the Municipal Government Act .\nY",
+    "type": "General",
+    "image": ""
+  },
+  {
+  "termID": "Yard",
+  "terms": "Yard",
+  "text": "A part of a site unoccupied by any portion of a building or structure 0.6m or more above grade except for specifically permitted encroachments and accessory developments permitted in this Bylaw - and includes all of the following:\n\n** (a) Yard, Front** means a yard extending across the full width of a lot and situated between the front lot line and nearest exterior wall of the principal building.\n\n** (b) Yard, Rear** means a yard extending across the full width of a lot and situated between the rear lot line and the nearest exterior wall of the principal building.\n\n** (c) Yard, Side** means a yard extending from the front yard to the rear yard and situated between a side lot line and the nearest exterior wall of the principal building.",
+  "type": "General",
+  "image": ""
+},
+  {
+    "termID": "Zero_Lot_Line_Development",
+    "terms": "Zero Lot Line Development",
+    "text": "A form of residential development in which buildings are permitted to be located on one side lot line with no yard between the building and that one side lot line.\nSign Regulations\nPurpose and Intent\nThis section of the Land Use Bylaw provides definitions and regulations for signs and outlines sign owner responsibilities. Regulations for signs within the City of Airdrie are put into place for the purposes of:\n(a) Ensuring that signs are compatible with their surroundings;",
+    "type": "General",
+    "image": ""
+  },
+
+  {
+    "termID": "A-Frame_Sign",
+    "terms": "A-Frame Sign",
+    "text": "A self-supporting local advertising sign, typically A-shaped, which is set upon the ground and may or may not have an external supporting structure;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Awning_Sign",
+    "terms": "Awning Sign",
+    "text": "A sign which either forms, or is attached to, in whole or in part, a retractable or permanently affixed canopy structure, and includes a sign suspended below the ceiling or roof of a canopy or marquee;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Banner_Sign",
+    "terms": "Banner Sign",
+    "text": "A temporary sign constructed from cloth, plastic or other non-rigid fabric, which moves freely with wind movement, and may include its own supporting structure or be attached to another feature or structure.\nThis may include:\n\u0083 Freestanding\n\u0083 Hanging\n\u0083 Light Standard",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Billboard_Sign",
+    "terms": "Billboard Sign",
+    "text": "A large freestanding sign located primarily on major traffic corridors, which directs attention to a business, service, product or event that is located, conducted or produced elsewhere than the site where the sign is located;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Building_Face",
+    "terms": "Building Face",
+    "text": "Any exterior wall of a building;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Changeable_Copy",
+    "terms": "Changeable Copy",
+    "text": "That portion of a sign upon which copy may be changed from time to time, either manually through the utilization of attachable characters or replacing the sign copy, or electronically in the case of a sign that contains digital media;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Clear_Height",
+    "terms": "Clear Height",
+    "text": "The vertical distance measured from finished grade to the bottom of the lowest hanging overhead obstruction formed by the Sign Structure.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Clear_Pedestrian_Space",
+    "terms": "Clear Pedestrian Space",
+    "text": "The horizontal distance measured from walkway or other path intended to accommodate pedestrian traffic to any part of the Sign Structure.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Community_Identification",
+    "terms": "Community Identification",
+    "text": "A type of sign copy which displays the name of a residential neighbourhood, commercial or industrial subdivision, or other development, and which is typically located at the primary entrance to the subdivision or development;\nSign Definitions",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Construction",
+    "terms": "Construction",
+    "text": "A type of sign copy which is used for the purpose of advertising items such as the provision of labour, services, materials, or financing of a development or similar project, and which is placed on the site where the project is being constructed;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Development_Marketing",
+    "terms": "Development Marketing",
+    "text": "A type of sign copy which is used to promote a new subdivision or development project, vacant lots, and/or show homes;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Digital_Media",
+    "terms": "Digital Media",
+    "text": "A sign feature where the message or copy of the sign incorporates a technology or method for allowing the sign to contain changeable copy without having to physically or mechanically replace the sign or its components. This includes, but is not limited to, digital signs, electronic message boards, gas station price boards, and time/temperature displays;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Election",
+    "terms": "Election",
+    "text": "A type of sign copy which is used for political advertising and campaigning during a period of a federal, provincial, municipal, school board election, referendum, or plebiscite. This also includes information signs used to identify and direct traffic to polling stations;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Fascia_Sign",
+    "terms": "Fascia Sign",
+    "text": "A sign that is painted on or attached to the exterior face of a building and runs parallel to a building face, not projecting more than 0.3m out from the wall;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Illuminated_Backlit",
+    "terms": "Illuminated, Backlit",
+    "text": "A sign feature where an artificial light source is used to illuminate the sign from the side or back of the display panel, and may be contained within the structure of the sign;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Illuminated_Exterior",
+    "terms": "Illuminated, Exterior",
+    "text": "A sign feature where an artificial light source is used to illuminate the sign from an external source directed to the sign copy;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Lawn_Sign",
+    "terms": "Lawn Sign",
+    "text": "A temporary freestanding sign commonly made of corrugated plastic or a similar type of material. Typical uses include temporary signs used to advertise election campaigns, yard sales, seasonal retail sales and specials, real estate for sale, and community events;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Limited_Use",
+    "terms": "Limited Use",
+    "text": "A type of sign copy which is used to advertise a location, product, event or activity on a temporary basis, either as a single event or activity over a limited duration of time, or as a regular activity that is for limited periods of time and subject to a recurring schedule (i.e. weekly, monthly). This includes but is not limited to signs for garage sales, open houses, show homes, community events, and similar signs that are temporary in nature.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Monument_Sign",
+    "terms": "Monument Sign",
+    "text": "A freestanding sign on a supporting structure or foundation, where the base structure or foundation has an equal or greater length than the sign copy. These are intended to be lower-profile signs and may also include associated landscaping;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Mounted_Sign",
+    "terms": "Mounted Sign",
+    "text": "A flat sign affixed to a fence or other similar structure, but not a building;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Portable_Sign",
+    "terms": "Portable Sign",
+    "text": "A temporary sign mounted on a frame, trailer, stand or similar structure that is easily transported and erected for a limited time. This does not include signs attached to, or painted on, vehicles;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Projecting_Sign",
+    "terms": "Projecting Sign",
+    "text": "A sign that is attached to a wall of a building and horizontally extends more than 0.3m from the building face;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Public_Direction",
+    "terms": "Public Direction",
+    "text": "A type of sign copy that provides assistance in directing the public either on public or private property, and which provides no commercial message;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Pylon_Sign",
+    "terms": "Pylon Sign",
+    "text": "A freestanding sign which is supported by columns, structures or other supports that are anchored in the ground independent of a building;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Real_Estate",
+    "terms": "Real Estate",
+    "text": "A type of sign copy which is used for the purpose of advertising the sale, lease or rental of the property on which the sign is located;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Roof_Sign",
+    "terms": "Roof Sign",
+    "text": "Any sign erected upon, against, or directly above a roof of a building. This also may include a sign placed above the parapet of a building;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Rotating",
+    "terms": "Rotating",
+    "text": "A sign feature where the sign, or portion of the sign, moves in a revolving manner;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Sign",
+    "terms": "Sign",
+    "text": "An object or device, including its structure and other component parts, intended for the purpose of advertising or calling attention to any business, product, event, service or thing. This does not include a poster equal to or less than 0.3m\u00b2 in area;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Sign_Area",
+    "terms": "Sign Area",
+    "text": "The entire area of the sign on which the copy is intended to be placed;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Sign_Copy",
+    "terms": "Sign Copy",
+    "text": "The letters, graphics or characters that make up the message on the sign;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Sign_Height",
+    "terms": "Sign Height",
+    "text": "The vertical distance measured from the highest point of the sign or sign structure to the finished grade;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Sign_Structure",
+    "terms": "Sign Structure",
+    "text": "Any structure which supports a sign, including materials used to conceal or improve the visual appearance of the structural parts;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Specialized_Sign",
+    "terms": "Specialized Sign",
+    "text": "A sign that does not fall within any other definition provided in this Bylaw;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Standard",
+    "terms": "Standard",
+    "text": "A type of sign copy for general advertising, promotion, or information dissemination not otherwise defined by another type of sign copy in this bylaw and not otherwise prohibited by this bylaw.\nBylaw B-15/2020",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Temporary",
+    "terms": "Temporary",
+    "text": "A time limitation for a sign as indicated within this Bylaw. Where no time limitation is set by the regulations of the Bylaw, it shall be determined by the Development Authority or by the length of a Development Permit approval;",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Third-Party_Advertising",
+    "terms": "Third-Party Advertising",
+    "text": "A sign feature in which the sign copy directs attention to a business, commodity, service or event that is conducted, sold, or offered elsewhere than on the site on which the sign is located.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Valance",
+    "terms": "Valance",
+    "text": "The portion of an awning or canopy which hangs below the structure and parallel to the building face.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Window_Sign",
+    "terms": "Window Sign",
+    "text": "A sign which forms, or is attached to, or painted on, or installed inside a window, and which is intended to be viewed from outside the premises;\nSign Permit Application Requirements\nPermit applications for signs shall be submitted to the Development Authority on the prescribed form and shall contain all submission requirements as follows:\n(a) All dimensions of the sign, including height of the sign and the sign structure;\n(b) Area and design of copy;\n(c) Type of construction and finishing to be utilized;\n(d) Method of support;\n(e) Details of sign illumination and/or digital media;\n(f) If the sign permit is for a sign containing digital media, the permit must include the name and contact information of a person(s) having access to the technology controls for the sign, who can be contacted 24 hours a day if the sign malfunctions.\n(g) Site plan showing sign location in relation to property boundaries and buildings;\n(h) Fees required for the permit; and\n(a)  One side yard setback for the principal building may be reduced to zero metres where the owner of the parcel proposed for development and the owner of the adjacent parcel register, against both titles, a minimum 1.5 metre private maintenance easement that provides for:\nA 0.30 metre eave encroachment easement with the requirement that the eaves must not be closer than 0.90 metres to the eaves on the building on the adjacent parcel, and;\nA 0.60 metre footing encroachment easement:\n(b)  All roof drainage from the building is discharged through eavestroughs and downspouts onto the parcel on which the building is located.\n(c)  Except for the provided encroachments for eaves and footings described above, no projections or encroachments  shall  be  permitted  for  access,  architectural,  or  amenity  features  described  in Section 7.25 .\n(d)  Where a side yard setback for the principal building is reduced to zero metres in accordance with the above provision, the minimum side yard setback for the associated Accessor Building may have the same side yard reduced to zero metres.\n(e)  Fences  are  supported  in  accordance  with Section  7.14 but  shall  not  block  the  neighbouring properties' right to access the areas covered by the maintenance easement described in subsection (16), above.\n(f) No dwelling unit may provide a building access on the side of the dwelling where the side yard has been reduced to zero metres in accordance with this section.\nProvisions for Utility Infrastructure and Rights of Way:\nNotwithstanding the minimum dwelling width and required setbacks outlined in this district, individual lots within a subdivision phase shall be designed to accommodate any required utilities, infrastructure, rights of way, and/or easements without creating a conflict with the setbacks and associated building envelope of the principal or accessory buildings.\nDefinitions\nUnless otherwise defined in this Direct Control Bylaw, all words and uses shall be defined as per Part One (Definitions) of the City of Airdrie Land Use Bylaw, as amended.",
+    "type": "General",
+    "image": "Window_Sign_img1.png"
+  },
+  {
+    "termID": "Traditional_Single_Detached_Dwelling",
+    "terms": "Traditional Single Detached Dwelling",
+    "text": "A sub-category of the 'Single Detached Dwelling' land use - where dwelling provides a lot width of at least 11.0m, and generally in keeping the minimum standards of the R1, Single Detached Residential District in Land Use Bylaw No. B-01/2016, as may be amended from time to time.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Narrow_Single_Detached_Dwelling",
+    "terms": "Narrow Single Detached Dwelling",
+    "text": "A sub-category of the 'Single Detached Dwelling' land use - where the dwelling provides a lot width equal to or less than 10.36m includes a garage up to 6.1m wide.\nBylaw B-37/2022",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Helicopter_Repair_and_Maintenance_Facility",
+    "terms": "Helicopter Repair and Maintenance Facility",
+    "text": "A development used for the servicing, washing and repairing of helicopters and other incidental related operations  and  supporting  uses.  This  does  not  include  other  large-scale  operations  that  would  be permitted under the general \"Airport Operations\" land use.",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Laboratory",
+    "terms": "Laboratory",
+    "text": "The use of a building, or part of a building for scientific or technical work which may be hazardous, including  research,  quality  control,  testing,  teaching  or  analysis;  such  work  may  involve  the  use  of chemicals  including  dangerous  goods,  pathogens  and  harmful  radiation,  or  processes  including electrical or mechanical work which could be hazardous; the laboratory includes such support areas as instrument  and  preparation  areas,  laboratory  stores  and  any  offices  attached  or  adjacent  to  the laboratory; has no clients coming to the facility and does not include Health Care as  defined in this Bylaw",
+    "type": "General",
+    "image": ""
+  },
+  {
+    "termID": "Seniors_Assisted_Living_Housing_Facility",
+    "terms": "Seniors Assisted Living Housing Facility",
+    "text": "A living arrangement in which personal care services such as meals, housekeeping, transportation, and assistance with the activities of daily living are available on an as needed basis",
+    "type": "General",
+    "image": ""
+  }
+]
