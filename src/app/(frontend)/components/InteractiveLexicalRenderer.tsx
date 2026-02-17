@@ -77,6 +77,11 @@ export function InteractiveLexicalRenderer({ data }: { data: SerializedEditorSta
     return {
       ...defaultConverters,
       ...linkConverters,
+      styledlist: ({ node, nodesToJSX }: { node: any; nodesToJSX: (args: { nodes: any[] }) => React.ReactNode }) => {
+        const children = nodesToJSX({ nodes: node.children });
+        const listStyleType = node.listStyleType ?? 'decimal';
+        return <ol className={`list-${listStyleType}`}>{children}</ol>;
+      },
       link: (args: any) => {
         const node = args.node as any;
         const fields = node?.fields as ActionableLinkFields | undefined;

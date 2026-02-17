@@ -38,6 +38,11 @@ const internalDocToHref = ({ linkNode }: { linkNode: SerializedLinkNode }) => {
 const jsxConverters: JSXConvertersFunction<NodeTypes> = ({ defaultConverters }) => ({
   ...defaultConverters,
   ...LinkJSXConverter({ internalDocToHref }),
+  styledlist: ({ node, nodesToJSX }) => {
+    const children = nodesToJSX({ nodes: node.children });
+    const listStyleType = (node as { listStyleType?: string }).listStyleType ?? 'decimal';
+    return <ol className={`list-${listStyleType}`}>{children}</ol>;
+  },
   blocks: {
     banner: ({ node }) => <BannerBlock className="col-start-2 mb-4" {...node.fields} />,
     mediaBlock: ({ node }) => (

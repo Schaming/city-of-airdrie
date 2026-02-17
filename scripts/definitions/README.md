@@ -147,8 +147,8 @@ node importDefinitions.js
 - Add `PAYLOAD_SECRET=your_secret_key` to your `.env` file
 
 ### "Cannot find module '@payload-config'"
-- Run this from the project root context where Payload is configured
-- Ensure all dependencies are installed: `npm install`
+- Run the script with **tsx** (not plain `node`) so the `@payload-config` path alias is resolved. From the project root: `pnpm run import:definitions` or `pnpm exec tsx scripts/definitions/importDefinitions.js`
+- Ensure all dependencies are installed: `pnpm install`
 
 ### Duplicate imports
 - The script is idempotent - running it multiple times won't create duplicates

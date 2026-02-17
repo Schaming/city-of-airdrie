@@ -279,7 +279,7 @@ export function BylawsBrowseSidebar({
         )} */}
 
         {showBylawList &&
-          [...bylawList].reverse().map(b => {
+          [...bylawList].map(b => {
             const bylawStateKey = makeKey('bylaw', b.id)
             const bylawOpen = openState[bylawStateKey] ?? false
             const sections = sectionsByBylawId[b.id] ?? []

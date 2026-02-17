@@ -926,6 +926,10 @@ export interface BylawSection {
           }
         | {
             kind: 'ordered' | 'unordered';
+            /**
+             * Numbering style for ordered lists.
+             */
+            listStyleType?: ('decimal' | 'upper-roman' | 'lower-roman') | null;
             items?:
               | {
                   text: string;
@@ -1090,6 +1094,10 @@ export interface BylawSubsection {
           }
         | {
             kind: 'ordered' | 'unordered';
+            /**
+             * Numbering style for ordered lists.
+             */
+            listStyleType?: ('decimal' | 'upper-roman' | 'lower-roman') | null;
             items?:
               | {
                   text: string;
@@ -1875,6 +1883,7 @@ export interface BylawSectionsSelect<T extends boolean = true> {
           | T
           | {
               kind?: T;
+              listStyleType?: T;
               items?:
                 | T
                 | {
@@ -1959,6 +1968,7 @@ export interface BylawSubsectionsSelect<T extends boolean = true> {
           | T
           | {
               kind?: T;
+              listStyleType?: T;
               items?:
                 | T
                 | {

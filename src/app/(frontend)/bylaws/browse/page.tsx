@@ -14,6 +14,12 @@ import { unstable_cache } from 'next/cache'
 const SECTION_LIMIT = 500
 const BASE_PATH = '/bylaws/browse'
 
+/** TEMPORARY: Restrict browse sidebar and picker to these bylaw titles only. Remove this constant and use full bylawList below to restore showing all bylaws. */
+const TEMPORARY_BROWSE_BYLAW_TITLES = [
+  '2. Administrative Requirements',
+  '3. Landscaping Requirements',
+] as const
+
 export const dynamic = 'force-dynamic'
 
 function getBylawId(ref: number | { id: number } | null | undefined): number | null {
@@ -200,12 +206,17 @@ export default async function BylawsBrowsePage({ searchParams }: PageProps) {
   }
 
   const bylawList = await fetchBylawList()
+  const bylawListForBrowse = bylawList
+    .filter(b =>
+      (TEMPORARY_BROWSE_BYLAW_TITLES as readonly string[]).includes(b.title ?? ''),
+    )
+    .sort((a, b) => (a.title ?? '').localeCompare(b.title ?? '', undefined, { sensitivity: 'base' }))
 
   // Preload sections for all bylaws when in picker mode (no bylaw selected)
   let sectionsByBylawId: Record<number, SidebarSectionItem[]> = {}
-  if (!bylawParam && bylawList.length > 0) {
+  if (!bylawParam && bylawListForBrowse.length > 0) {
     const entries = await Promise.all(
-      bylawList.map(async b => {
+      bylawListForBrowse.map(async b => {
         const data = await getCachedSectionsByBylawId(b.id)
         const sections: SidebarSectionItem[] = data.map(({ section, subsections }) => ({
           id: section.id,
@@ -232,7 +243,7 @@ export default async function BylawsBrowsePage({ searchParams }: PageProps) {
     if (Number.isNaN(bylawId) || !(await bylawIdExists(bylawId))) {
       return (
         <>
-          <BylawsBrowseView bylawList={bylawList} error="Invalid or unknown bylaw." />
+          <BylawsBrowseView bylawList={bylawListForBrowse} error="Invalid or unknown bylaw." />
           <footer className="bylaws-footer">
             <p>{siteConfig.bylaws.footerDisclaimer}</p>
           </footer>
@@ -243,7 +254,7 @@ export default async function BylawsBrowsePage({ searchParams }: PageProps) {
     return (
       <>
         <BylawsBrowseView
-          bylawList={bylawList}
+          bylawList={bylawListForBrowse}
           sectionsWithSubsections={sectionsWithSubsections}
           initialSectionSlug={sectionParam ?? null}
           currentBylawId={bylawId}
@@ -257,7 +268,7 @@ export default async function BylawsBrowsePage({ searchParams }: PageProps) {
 
   return (
     <>
-      <BylawsBrowseView bylawList={bylawList} sectionsByBylawId={sectionsByBylawId} />
+      <BylawsBrowseView bylawList={bylawListForBrowse} sectionsByBylawId={sectionsByBylawId} />
       <footer className="bylaws-footer">
         <p>{siteConfig.bylaws.footerDisclaimer}</p>
       </footer>

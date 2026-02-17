@@ -1,13 +1,16 @@
 import type { TextFieldSingleValidation } from 'payload';
 import {
   BoldFeature,
+  defaultColors,
   ItalicFeature,
   LinkFeature,
   ParagraphFeature,
+  TextStateFeature,
   lexicalEditor,
   UnderlineFeature,
   type LinkFields,
 } from '@payloadcms/richtext-lexical';
+import { StyledListFeature } from '@/lexical/features/StyledListFeature/server';
 
 export const defaultLexical = lexicalEditor({
   features: ({ defaultFeatures }) => {
@@ -23,6 +26,19 @@ export const defaultLexical = lexicalEditor({
       UnderlineFeature(),
       BoldFeature(),
       ItalicFeature(),
+
+      // Text and background colors (toolbar dropdown)
+      TextStateFeature({
+        state: {
+          color: {
+            ...defaultColors.text,
+            ...defaultColors.background,
+          },
+        },
+      }),
+
+      // Styled ordered lists (decimal / upper-roman / lower-roman) in rich text
+      StyledListFeature(),
 
       // Our custom LinkFeature with extra fields
       LinkFeature({

@@ -58,6 +58,8 @@ export type ListBlockData = {
    */
   kind?: 'ordered' | 'unordered';
   listType?: 'bullet' | 'number';
+  /** Numbering style for ordered lists (only when kind === 'ordered'). */
+  listStyleType?: 'decimal' | 'upper-roman' | 'lower-roman';
   items: ListItem[];
 };
 

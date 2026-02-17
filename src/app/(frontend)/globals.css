@@ -96,6 +96,20 @@
   }
 }
 
+/* List style types (List block and rich text lists) */
+.list-decimal {
+  list-style-type: decimal;
+}
+.list-upper-roman {
+  list-style-type: upper-roman;
+}
+.list-lower-roman {
+  list-style-type: lower-roman;
+}
+.list-disc {
+  list-style-type: disc;
+}
+
 html {
   opacity: 0;
 }
