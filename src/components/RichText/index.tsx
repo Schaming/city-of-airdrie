@@ -38,6 +38,14 @@ const internalDocToHref = ({ linkNode }: { linkNode: SerializedLinkNode }) => {
 const jsxConverters: JSXConvertersFunction<NodeTypes> = ({ defaultConverters }) => ({
   ...defaultConverters,
   ...LinkJSXConverter({ internalDocToHref }),
+  list: ({ node, nodesToJSX }) => {
+    const children = nodesToJSX({ nodes: node.children });
+    const listType = (node as { listType?: string }).listType;
+    const listClass =
+      listType === 'number' ? 'list-decimal' : listType === 'bullet' ? 'list-disc' : `list-${listType ?? 'decimal'}`;
+    const Tag = (node as { tag?: 'ol' | 'ul' }).tag ?? 'ol';
+    return <Tag className={listClass}>{children}</Tag>;
+  },
   styledlist: ({ node, nodesToJSX }) => {
     const children = nodesToJSX({ nodes: node.children });
     const listStyleType = (node as { listStyleType?: string }).listStyleType ?? 'decimal';

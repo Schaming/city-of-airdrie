@@ -77,6 +77,14 @@ export function InteractiveLexicalRenderer({ data }: { data: SerializedEditorSta
     return {
       ...defaultConverters,
       ...linkConverters,
+      list: ({ node, nodesToJSX }: { node: any; nodesToJSX: (args: { nodes: any[] }) => React.ReactNode }) => {
+        const children = nodesToJSX({ nodes: node.children });
+        const listType = node.listType;
+        const listClass =
+          listType === 'number' ? 'list-decimal' : listType === 'bullet' ? 'list-disc' : `list-${listType ?? 'decimal'}`;
+        const Tag = node.tag ?? 'ol';
+        return <Tag className={listClass}>{children}</Tag>;
+      },
       styledlist: ({ node, nodesToJSX }: { node: any; nodesToJSX: (args: { nodes: any[] }) => React.ReactNode }) => {
         const children = nodesToJSX({ nodes: node.children });
         const listStyleType = node.listStyleType ?? 'decimal';

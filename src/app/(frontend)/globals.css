@@ -97,7 +97,8 @@
 }
 
 /* List style types (List block and rich text lists) */
-.list-decimal {
+.list-decimal,
+.list-number {
   list-style-type: decimal;
 }
 .list-upper-roman {
@@ -106,7 +107,8 @@
 .list-lower-roman {
   list-style-type: lower-roman;
 }
-.list-disc {
+.list-disc,
+.list-bullet {
   list-style-type: disc;
 }
 

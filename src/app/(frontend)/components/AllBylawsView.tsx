@@ -217,7 +217,8 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
   return (
     <ReferenceSidebarProvider>
       <div className="mx-auto w-full max-w-[1600px] p-3 space-y-4">
-        <header className="sticky top-0 z-30 border-b border-gray-200 bg-white pb-4 mb-6">
+        <header className="fixed left-0 right-0 top-0 z-30 border-b border-gray-200 bg-white pb-4 lg:sticky lg:top-0 lg:left-auto lg:right-auto lg:mb-6">
+        <div className="mx-auto w-full max-w-[1600px] px-3 pt-3">
           {/* Mobile: search first */}
           <div className="lg:hidden mb-4">
             <details className="rounded-lg border border-gray-200 bg-white p-3 shadow-sm">
@@ -236,23 +237,23 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
             </details>
           </div>
 
-          {/* Row: hamburger + title (mobile) / title + search (desktop) */}
+          {/* Row: title + hamburger (mobile) / title + search (desktop) */}
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-            <div className="flex items-center gap-2 min-w-0">
-              <button
-                type="button"
-                onClick={() => setTocOpen(true)}
-                aria-label="Open table of contents"
-                className="lg:hidden shrink-0 p-2 -ml-2 rounded-lg text-gray-700 hover:bg-gray-100"
-              >
-                <Menu className="h-6 w-6" />
-              </button>
+            <div className="flex items-start gap-2 min-w-0">
               <div className="min-w-0">
                 <h1 className="text-2xl font-semibold">All Bylaws</h1>
                 <p className="text-sm text-gray-600">
                   Browse every bylaw with its subsections in one view.
                 </p>
               </div>
+              <button
+                type="button"
+                onClick={() => setTocOpen(true)}
+                aria-label="Open table of contents"
+                className="lg:hidden shrink-0 p-2 -mr-2 rounded-lg text-gray-700 hover:bg-gray-100"
+              >
+                <Menu className="h-6 w-6" />
+              </button>
             </div>
 
             <div className="hidden lg:block lg:w-full lg:max-w-2xl">
@@ -284,7 +285,10 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
               </div>
             </div>
           )}
+        </div>
         </header>
+        {/* Spacer so content is not hidden under fixed header on mobile */}
+        <div className="lg:hidden h-52 shrink-0" aria-hidden="true" />
 
         {/* Mobile TOC drawer */}
         <>
@@ -296,12 +300,12 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
             />
           )}
           <div
-            className={`fixed left-0 top-0 bottom-0 w-72 bg-white shadow-xl z-50 overflow-y-auto lg:hidden transition-transform duration-200 ${
-              tocOpen ? 'translate-x-0' : '-translate-x-full'
+            className={`fixed left-0 right-0 top-0 z-50 max-h-[85vh] flex flex-col bg-white shadow-xl lg:hidden transition-transform duration-200 ${
+              tocOpen ? 'translate-y-0' : '-translate-y-full'
             }`}
             aria-label="Table of contents"
           >
-            <div className="sticky top-0 flex items-center justify-between p-3 border-b border-gray-200 bg-white">
+            <div className="flex shrink-0 items-center justify-between border-b border-gray-200 p-3">
               <span className="font-semibold text-gray-800">Table of contents</span>
               <button
                 type="button"
@@ -312,7 +316,7 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
                 <X className="h-5 w-5" />
               </button>
             </div>
-            <div className="p-3" onClick={() => setTocOpen(false)} role="presentation">
+            <div className="min-h-0 overflow-y-auto p-3" onClick={() => setTocOpen(false)} role="presentation">
               <AllBylawsSidebar
                 items={sectionsWithSubsections.map(({ section, subsections }) => ({
                   id: section.id,
@@ -425,7 +429,7 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
 
         <div className="flex flex-col lg:flex-row gap-8">
           <aside
-            className="hidden lg:block lg:w-[17rem] lg:shrink-0 lg:border-r lg:pr-4 lg:sticky lg:top-4 self-start"
+            className="hidden lg:block lg:w-[17rem] lg:shrink-0 lg:border-r lg:pr-4 lg:sticky lg:top-36 self-start"
             aria-label="Bylaw Navigation"
           >
             <AllBylawsSidebar

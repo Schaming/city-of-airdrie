@@ -235,7 +235,10 @@ export function BylawsBrowseSidebar({
           {hasChildren && (
             <button
               type="button"
-              onClick={() => toggle(key)}
+              onClick={e => {
+                e.stopPropagation()
+                toggle(key)
+              }}
               aria-label={isOpen ? 'Collapse subsection' : 'Expand subsection'}
               className="ml-auto flex h-6 shrink-0 items-center justify-center rounded border px-2 text-xs"
             >
@@ -311,7 +314,10 @@ export function BylawsBrowseSidebar({
                   {hasSections && (
                     <button
                       type="button"
-                      onClick={() => toggle(bylawStateKey)}
+                      onClick={e => {
+                        e.stopPropagation()
+                        toggle(bylawStateKey)
+                      }}
                       aria-label={bylawOpen ? 'Collapse bylaw sections' : 'Expand bylaw sections'}
                       className="ml-auto flex h-6 shrink-0 items-center justify-center rounded border px-2 text-xs"
                     >
@@ -355,7 +361,10 @@ export function BylawsBrowseSidebar({
                             {hasSubsections && (
                               <button
                                 type="button"
-                                onClick={() => toggle(sectionKey)}
+                                onClick={e => {
+                                  e.stopPropagation()
+                                  toggle(sectionKey)
+                                }}
                                 aria-label={
                                   sectionOpen ? 'Collapse subsections' : 'Expand subsections'
                                 }

@@ -212,9 +212,9 @@ export default async function BylawsBrowsePage({ searchParams }: PageProps) {
     )
     .sort((a, b) => (a.title ?? '').localeCompare(b.title ?? '', undefined, { sensitivity: 'base' }))
 
-  // Preload sections for all bylaws when in picker mode (no bylaw selected)
+  // Preload sections for all bylaws so sidebar can show chevrons and expand/collapse for every bylaw
   let sectionsByBylawId: Record<number, SidebarSectionItem[]> = {}
-  if (!bylawParam && bylawListForBrowse.length > 0) {
+  if (bylawListForBrowse.length > 0) {
     const entries = await Promise.all(
       bylawListForBrowse.map(async b => {
         const data = await getCachedSectionsByBylawId(b.id)
@@ -256,6 +256,7 @@ export default async function BylawsBrowsePage({ searchParams }: PageProps) {
         <BylawsBrowseView
           bylawList={bylawListForBrowse}
           sectionsWithSubsections={sectionsWithSubsections}
+          sectionsByBylawId={sectionsByBylawId}
           initialSectionSlug={sectionParam ?? null}
           currentBylawId={bylawId}
         />
