@@ -261,7 +261,7 @@ export function BylawsBrowseView({
                     : 'Browse sections and subsections for the selected bylaw.'}
                 </p> */}
                 </div>
-                {!isPicker && bylawList.length > 0 && (
+                {bylawList.length > 0 && (
                   <button
                     type="button"
                     onClick={() => setTocOpen(true)}
@@ -311,7 +311,7 @@ export function BylawsBrowseView({
         <div className="lg:hidden h-[8rem] shrink-0 mb-0" aria-hidden="true" />
 
         {/* Mobile TOC drawer */}
-        {!isPicker && bylawList.length > 0 && (
+        {bylawList.length > 0 && (
           <>
             {tocOpen && (
               <div

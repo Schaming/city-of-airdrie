@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { X } from 'lucide-react';
 import { useReferenceSidebar } from './ReferenceSidebarContext';
 import { InteractiveLexicalRenderer } from './InteractiveLexicalRenderer';
@@ -8,6 +9,11 @@ import { InteractiveLexicalRenderer } from './InteractiveLexicalRenderer';
 export function ReferenceDrawer() {
   const { data, loading, error, lookupId } = useReferenceSidebar();
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (lookupId > 0) {
@@ -15,37 +21,44 @@ export function ReferenceDrawer() {
     }
   }, [lookupId]);
 
-  return (
+  const mobileUI = (
     <>
       <button
         type="button"
-        className="md:hidden fixed bottom-4 right-4 z-40 flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-gray-700 shadow-lg shadow-black/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+        className="md:hidden fixed bottom-4 right-4 z-[100] flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-gray-700 shadow-lg shadow-black/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
         onClick={() => setIsOpen(true)}
       >
         View reference
       </button>
 
       {isOpen && (
-        <div className="md:hidden fixed inset-0 z-50 flex">
+        <div
+          className="md:hidden fixed inset-x-0 bottom-0 top-0 z-[100] flex flex-col justify-end min-h-[100dvh] min-h-[100vh]"
+          style={{ minHeight: '100dvh' }}
+        >
           <div
             className="absolute inset-0 bg-black/40"
             onClick={() => setIsOpen(false)}
+            aria-hidden
           />
 
-          <section 
-            className="relative mt-auto w-full rounded-t-2xl bg-white shadow-xl flex flex-col max-h-[70vh]"
+          <section
+            className="relative w-full max-w-full rounded-t-2xl bg-white shadow-xl flex flex-col max-h-[70dvh] max-h-[70vh]"
+            style={{ maxHeight: '70dvh' }}
             aria-label="Reference Details"
           >
-            <div className="flex items-center justify-between p-4 border-b shrink-0">
+            <div className="flex items-center justify-between gap-3 p-4 border-b border-gray-200 bg-gray-50 shrink-0">
               <div className="font-semibold text-sm uppercase text-gray-600 tracking-wider">
                 {data?.type === 'definition' ? 'Definition' : data?.type === 'amendment' ? 'Amendment' : 'Reference'}
               </div>
               <button
                 type="button"
-                className="p-1 text-gray-600 transition hover:text-gray-800"
+                className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-200 shadow-sm transition hover:bg-gray-100 hover:border-gray-300"
                 onClick={() => setIsOpen(false)}
+                aria-label="Close reference"
               >
-                <X className="h-5 w-5" />
+                <X className="h-4 w-4" aria-hidden />
+                Close
               </button>
             </div>
 
@@ -93,4 +106,7 @@ export function ReferenceDrawer() {
       )}
     </>
   );
+
+  if (!mounted || typeof document === 'undefined') return null;
+  return createPortal(mobileUI, document.body);
 }
