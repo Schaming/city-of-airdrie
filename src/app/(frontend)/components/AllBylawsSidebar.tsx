@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { ChevronDown, ChevronUp } from 'lucide-react'
 
 type SidebarSubsection = {
   id: string | number
@@ -112,23 +113,30 @@ export function AllBylawsSidebar({ items }: Props) {
 
     return (
       <div key={node.id} className="space-y-1">
-        <div className="flex items-center" style={{ marginLeft: `${depth * 12}px` }}>
-          {hasChildren ? (
+        <div
+          className="flex w-full items-center gap-2"
+          style={{ marginLeft: `${depth * 12}px` }}
+        >
+          <a
+            href={`#${node.slug}`}
+            className="min-w-0 flex-1 break-words hover:underline"
+          >
+            {node.code} {node.title}
+          </a>
+          {hasChildren && (
             <button
               type="button"
               onClick={() => toggle(key)}
               aria-label={isOpen ? 'Collapse subsection' : 'Expand subsection'}
-              className="mr-2 flex h-6 w-[25px] min-w-[25px] max-w-[25px] items-center justify-center rounded border text-xs"
+              className="ml-auto flex h-6 shrink-0 items-center justify-center rounded border px-2 text-xs"
             >
-              {isOpen ? '−' : '+'}
+              {isOpen ? (
+                <ChevronUp className="h-3.5 w-3.5" />
+              ) : (
+                <ChevronDown className="h-3.5 w-3.5" />
+              )}
             </button>
-          ) : (
-            <span className="mr-2 block h-6 w-[25px] min-w-[25px] max-w-[25px]" />
           )}
-
-          <a href={`#${node.slug}`} className="hover:underline">
-            {node.code} {node.title}
-          </a>
         </div>
 
         {hasChildren && isOpen && (
@@ -141,7 +149,7 @@ export function AllBylawsSidebar({ items }: Props) {
   }
 
   return (
-    <div className="overflow-y-auto max-h-[calc(100vh-2rem)] pr-1 -mr-1">
+    <div className="overflow-y-auto max-h-[calc(100vh-2rem)] pr-5 -mr-1">
       <nav className="text-sm space-y-3" aria-label="Table of Contents">
         {Array.from(groups.entries()).map(([bylawKey, { bylaw, sections }]) => {
           const bylawStateKey = makeKey('bylaw', bylawKey === 'none' ? 'none' : Number(bylawKey))
@@ -151,22 +159,28 @@ export function AllBylawsSidebar({ items }: Props) {
 
           return (
             <div key={bylawKey} className="space-y-1">
-              {/* Level 1: Bylaw — + reveals sections */}
-              <div className="flex items-center">
-                {hasSections ? (
+              {/* Level 1: Bylaw — chevron reveals sections */}
+              <div
+                className="flex w-full items-center gap-2"
+                style={{ marginLeft: '12px' }}
+              >
+                <span className="min-w-0 flex-1 break-words font-semibold text-gray-900">
+                  {bylawTitle}
+                </span>
+                {hasSections && (
                   <button
                     type="button"
                     onClick={() => toggle(bylawStateKey)}
                     aria-label={bylawOpen ? 'Collapse bylaw sections' : 'Expand bylaw sections'}
-                    className="mr-2 flex h-6 w-[25px] min-w-[25px] max-w-[25px] items-center justify-center rounded border text-xs"
+                    className="ml-auto flex h-6 shrink-0 items-center justify-center rounded border px-2 text-xs"
                   >
-                    {bylawOpen ? '−' : '+'}
+                    {bylawOpen ? (
+                      <ChevronUp className="h-3.5 w-3.5" />
+                    ) : (
+                      <ChevronDown className="h-3.5 w-3.5" />
+                    )}
                   </button>
-                ) : (
-                  <span className="mr-2 block h-6 w-[25px] min-w-[25px] max-w-[25px]" />
                 )}
-
-                <span className="font-semibold text-gray-900">{bylawTitle}</span>
               </div>
 
               {/* Level 2: Sections — + reveals subsections */}
@@ -180,25 +194,32 @@ export function AllBylawsSidebar({ items }: Props) {
 
                     return (
                       <div key={item.id} className="space-y-1">
-                        <div className="flex items-center" style={{ marginLeft: '12px' }}>
-                          {hasSubsections ? (
+                        <div
+                          className="flex w-full items-center gap-2"
+                          style={{ marginLeft: '12px' }}
+                        >
+                          <a
+                            href={`#${item.slug}`}
+                            className="min-w-0 flex-1 break-words hover:underline"
+                          >
+                            {item.code} {item.title}
+                          </a>
+                          {hasSubsections && (
                             <button
                               type="button"
                               onClick={() => toggle(sectionKey)}
                               aria-label={
                                 sectionOpen ? 'Collapse subsections' : 'Expand subsections'
                               }
-                              className="mr-2 flex h-6 w-[25px] min-w-[25px] max-w-[25px] items-center justify-center rounded border text-xs"
+                              className="ml-auto flex h-6 shrink-0 items-center justify-center rounded border px-2 text-xs"
                             >
-                              {sectionOpen ? '−' : '+'}
+                              {sectionOpen ? (
+                                <ChevronUp className="h-3.5 w-3.5" />
+                              ) : (
+                                <ChevronDown className="h-3.5 w-3.5" />
+                              )}
                             </button>
-                          ) : (
-                            <span className="mr-2 block h-6 w-[25px] min-w-[25px] max-w-[25px]" />
                           )}
-
-                          <a href={`#${item.slug}`} className="hover:underline">
-                            {item.code} {item.title}
-                          </a>
                         </div>
 
                         {/* Level 3: Subsections (nested under section) */}

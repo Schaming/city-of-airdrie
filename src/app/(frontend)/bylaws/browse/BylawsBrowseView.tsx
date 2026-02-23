@@ -13,7 +13,7 @@ import {
 } from '../../components/ReferenceSidebarContext'
 import { ReferenceSidebar } from '../../components/ReferenceSidebar'
 import { ReferenceDrawer } from '../../components/ReferenceDrawer'
-import { Search, Loader2 } from 'lucide-react'
+import { Search, Loader2, Menu, X } from 'lucide-react'
 import Link from 'next/link'
 import { BylawsBrowseSidebar } from './BylawsBrowseSidebar'
 
@@ -134,6 +134,7 @@ export function BylawsBrowseView({
   const [position, setPosition] = useState({ x: 20, y: 150 })
   const [isDragging, setIsDragging] = useState(false)
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 })
+  const [tocOpen, setTocOpen] = useState(false)
 
   useEffect(() => {
     if (!initialSectionSlug) return
@@ -223,29 +224,10 @@ export function BylawsBrowseView({
 
   return (
     <ReferenceSidebarProvider>
-      <div className="max-w-7xl mx-auto p-3 space-y-4">
-        <header className="border-b pb-4 mb-6">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div>
-              <h1 className="text-2xl font-semibold">{isPicker ? 'Browse bylaw' : 'Bylaw'}</h1>
-              <p className="text-sm text-gray-600">
-                {isPicker
-                  ? 'Select a bylaw to view its sections and subsections.'
-                  : 'Browse sections and subsections for the selected bylaw.'}
-              </p>
-            </div>
-
-            <div className="hidden md:block md:w-full md:max-w-2xl">
-              <SearchForm
-                searchQuery={searchQuery}
-                onQueryChange={setSearchQuery}
-                onSubmit={handleSearch}
-                isSearching={isSearching}
-              />
-            </div>
-          </div>
-
-          <div className="md:hidden mt-4">
+      <div className="mx-auto w-full max-w-[1600px] p-3 space-y-4">
+        <header className="sticky top-0 z-30 border-b border-gray-200 bg-white pb-4 mb-6">
+          {/* Mobile: search first */}
+          <div className="lg:hidden mb-4">
             <details className="rounded-lg border border-gray-200 bg-white p-3 shadow-sm">
               <summary className="flex cursor-pointer items-center justify-between text-sm font-semibold text-gray-800">
                 <span>Search the bylaws</span>
@@ -260,6 +242,39 @@ export function BylawsBrowseView({
                 />
               </div>
             </details>
+          </div>
+
+          {/* Row: hamburger + title (mobile) / title + search (desktop) */}
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <div className="flex items-center gap-2 min-w-0">
+              {!isPicker && bylawList.length > 0 && (
+                <button
+                  type="button"
+                  onClick={() => setTocOpen(true)}
+                  aria-label="Open table of contents"
+                  className="lg:hidden shrink-0 p-2 -ml-2 rounded-lg text-gray-700 hover:bg-gray-100"
+                >
+                  <Menu className="h-6 w-6" />
+                </button>
+              )}
+              <div className="min-w-0">
+                <h1 className="text-2xl font-semibold">{isPicker ? 'Browse bylaw' : 'Bylaw'}</h1>
+                <p className="text-sm text-gray-600">
+                  {isPicker
+                    ? 'Select a bylaw to view its sections and subsections.'
+                    : 'Browse sections and subsections for the selected bylaw.'}
+                </p>
+              </div>
+            </div>
+
+            <div className="hidden lg:block lg:w-full lg:max-w-2xl">
+              <SearchForm
+                searchQuery={searchQuery}
+                onQueryChange={setSearchQuery}
+                onSubmit={handleSearch}
+                isSearching={isSearching}
+              />
+            </div>
           </div>
 
           {error && (
@@ -285,6 +300,49 @@ export function BylawsBrowseView({
             </div>
           )}
         </header>
+
+        {/* Mobile TOC drawer */}
+        {!isPicker && bylawList.length > 0 && (
+          <>
+            {tocOpen && (
+              <div
+                className="fixed inset-0 bg-black/50 z-40 lg:hidden"
+                aria-hidden="true"
+                onClick={() => setTocOpen(false)}
+              />
+            )}
+            <div
+              className={`fixed left-0 top-0 bottom-0 w-72 bg-white shadow-xl z-50 overflow-y-auto lg:hidden transition-transform duration-200 ${
+                tocOpen ? 'translate-x-0' : '-translate-x-full'
+              }`}
+              aria-label="Table of contents"
+            >
+              <div className="sticky top-0 flex items-center justify-between p-3 border-b border-gray-200 bg-white">
+                <span className="font-semibold text-gray-800">Table of contents</span>
+                <button
+                  type="button"
+                  onClick={() => setTocOpen(false)}
+                  aria-label="Close table of contents"
+                  className="p-2 -mr-2 rounded-lg text-gray-600 hover:bg-gray-100"
+                >
+                  <X className="h-5 w-5" />
+                </button>
+              </div>
+              <div className="p-3" onClick={() => setTocOpen(false)} role="presentation">
+                <BylawsBrowseSidebar
+                  items={[]}
+                  initialSectionSlug={initialSectionSlug}
+                  currentBylawId={currentBylawId}
+                  bylawList={bylawList}
+                  sectionsByBylawId={{
+                    ...sectionsByBylawId,
+                    ...(currentBylawId != null ? { [currentBylawId]: sidebarItems } : {}),
+                  }}
+                />
+              </div>
+            </div>
+          </>
+        )}
 
         {searchResults.length > 0 && (
           <div
@@ -382,9 +440,9 @@ export function BylawsBrowseView({
         )}
 
         {isPicker ? (
-          <div className="flex flex-col md:flex-row gap-8">
+          <div className="flex flex-col lg:flex-row gap-8">
             <aside
-              className="hidden md:block md:w-72 md:shrink-0 md:border-r md:pr-4 md:sticky md:top-4 self-start"
+              className="hidden lg:block lg:w-[18rem] lg:shrink-0 lg:border-r lg:pr-4 lg:sticky lg:top-4 self-start"
               aria-label="Bylaw Navigation"
             >
               <BylawsBrowseSidebar
@@ -414,30 +472,9 @@ export function BylawsBrowseView({
           </div>
         ) : (
           <>
-            <div className="md:hidden">
-              <details className="rounded-lg border border-gray-200 bg-white p-3 shadow-sm">
-                <summary className="flex cursor-pointer items-center justify-between text-sm font-semibold text-gray-800 hover:text-blue-700">
-                  <span>Table of contents</span>
-                  <span className="text-xs text-gray-600">tap to expand</span>
-                </summary>
-                <div className="mt-3">
-                  <BylawsBrowseSidebar
-                    items={[]}
-                    initialSectionSlug={initialSectionSlug}
-                    currentBylawId={currentBylawId}
-                    bylawList={bylawList}
-                    sectionsByBylawId={{
-                      ...sectionsByBylawId,
-                      ...(currentBylawId != null ? { [currentBylawId]: sidebarItems } : {}),
-                    }}
-                  />
-                </div>
-              </details>
-            </div>
-
-            <div className="flex flex-col md:flex-row gap-8">
+            <div className="flex flex-col lg:flex-row gap-8">
               <aside
-                className="hidden md:block md:w-72 md:shrink-0 md:border-r md:pr-4 md:sticky md:top-4 self-start"
+                className="hidden lg:block lg:w-[18rem] lg:shrink-0 lg:border-r lg:pr-4 lg:sticky lg:top-4 self-start"
                 aria-label="Bylaw Navigation"
               >
                 <BylawsBrowseSidebar

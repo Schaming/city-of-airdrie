@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 
 type SubsectionNavItem = {
   id: string | number;
@@ -63,22 +64,30 @@ export function SubsectionSidebar({ subsections }: Props) {
 
     return (
       <div key={node.id} className="space-y-1">
-        <div className="flex items-center" style={{ marginLeft: `${(node.level - 1) * 12}px` }}>
-          {hasChildren ? (
+        <div
+          className="flex w-full items-center gap-2"
+          style={{ marginLeft: `${(node.level - 1) * 12}px` }}
+        >
+          <a
+            href={`#${node.slug}`}
+            className="min-w-0 flex-1 break-words hover:underline"
+          >
+            {node.code} {node.title}
+          </a>
+          {hasChildren && (
             <button
               type="button"
               onClick={() => toggle(node.id)}
               aria-label={isOpen ? 'Collapse subsection' : 'Expand subsection'}
-              className="mr-2 flex h-6 w-[25px] min-w-[25px] max-w-[25px] items-center justify-center rounded border text-xs"
+              className="ml-auto flex h-6 shrink-0 items-center justify-center rounded border px-2 text-xs"
             >
-              {isOpen ? '−' : '+'}
+              {isOpen ? (
+                <ChevronUp className="h-3.5 w-3.5" />
+              ) : (
+                <ChevronDown className="h-3.5 w-3.5" />
+              )}
             </button>
-          ) : (
-            <span className="mr-2 block h-6 w-[25px] min-w-[25px] max-w-[25px]" />
           )}
-          <a href={`#${node.slug}`} className="hover:underline">
-            {node.code} {node.title}
-          </a>
         </div>
 
         {hasChildren && isOpen && (

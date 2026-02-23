@@ -90,7 +90,7 @@ export default async function SectionPage({ params }: SectionPageProps) {
   }));
 
   return (
-    <div className="max-w-6xl mx-auto p-4">
+    <div className="mx-auto w-full max-w-[1600px] p-4">
       <header className="mb-8">
         <h1>{section.label}</h1>
       </header>
