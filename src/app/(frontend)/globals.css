@@ -101,15 +101,113 @@
 .list-number {
   list-style-type: decimal;
 }
+/* Nested ordered lists: sublists use alpha (A, B, C then a, b, c). Use ol/ul and .prose for specificity over Tailwind typography. */
+ol.list-decimal ol.list-decimal,
+ol.list-number ol.list-number,
+.list-decimal .list-decimal,
+.list-number .list-number,
+.list-upper-roman .list-decimal,
+.list-upper-roman .list-number,
+.list-lower-roman .list-decimal,
+.list-lower-roman .list-number,
+.prose ol.list-decimal ol.list-decimal,
+.payload-richtext ol.list-decimal ol.list-decimal {
+  list-style-type: upper-alpha;
+}
+ol.list-decimal ol.list-decimal ol.list-decimal,
+ol.list-number ol.list-number ol.list-number,
+.list-decimal .list-decimal .list-decimal,
+.list-number .list-number .list-number,
+.list-upper-roman .list-decimal .list-decimal,
+.list-lower-roman .list-decimal .list-decimal,
+.prose ol.list-decimal ol.list-decimal ol.list-decimal,
+.payload-richtext ol.list-decimal ol.list-decimal ol.list-decimal {
+  list-style-type: lower-alpha;
+}
 .list-upper-roman {
   list-style-type: upper-roman;
 }
 .list-lower-roman {
   list-style-type: lower-roman;
 }
+/* Roman lists: custom counter marker + li padding so text and wrapped lines start right of the numeral */
+ol.list-upper-roman {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1.25em;
+  counter-reset: list-item;
+}
+ol.list-upper-roman li {
+  position: relative;
+  counter-increment: list-item;
+  padding-left: 1.25em;
+}
+ol.list-upper-roman li::before {
+  content: counter(list-item, upper-roman) '. ';
+  position: absolute;
+  left: 0;
+  width: 2em;
+  text-align: left;
+}
+ol.list-lower-roman {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1.25em;
+  counter-reset: list-item;
+}
+ol.list-lower-roman li {
+  position: relative;
+  counter-increment: list-item;
+  padding-left: 2.25em;
+}
+ol.list-lower-roman li::before {
+  content: counter(list-item, lower-roman) '. ';
+  position: absolute;
+  left: 0;
+  width: 2em;
+  text-align: left;
+}
 .list-disc,
 .list-bullet {
   list-style-type: disc;
+}
+
+/* Align lists with body text: no extra left margin so list block lines up with paragraphs */
+ol.list-decimal,
+ol.list-number,
+ul.list-disc,
+ul.list-bullet,
+.prose ol,
+.prose ul,
+.payload-richtext ol,
+.payload-richtext ul {
+  margin-left: 0;
+  padding-left: 1.75em;
+}
+/* Nested lists: keep a bit more indent for hierarchy but not excessive */
+.prose ol ol,
+.prose ol ul,
+.prose ul ol,
+.prose ul ul,
+.payload-richtext ol ol,
+.payload-richtext ol ul,
+.payload-richtext ul ol,
+.payload-richtext ul ul,
+ol.list-decimal ol.list-decimal,
+ol.list-decimal ul.list-disc,
+ol.list-upper-roman ol.list-decimal,
+ol.list-upper-roman ol.list-upper-roman,
+ol.list-upper-roman ul.list-disc,
+ol.list-lower-roman ol.list-decimal,
+ol.list-lower-roman ul.list-disc,
+ul.list-disc ol.list-decimal,
+ul.list-disc ul.list-disc {
+  margin-left: 0;
+  padding-left: 1.75em;
+}
+
+ol.list-upper-roman  {
+  padding-left: 1em;
 }
 
 html {

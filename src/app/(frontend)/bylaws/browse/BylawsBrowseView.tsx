@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 import type {
   BylawSubsection,
   SectionWithSubsections,
@@ -18,6 +18,14 @@ import Link from 'next/link'
 import { BylawsBrowseSidebar } from './BylawsBrowseSidebar'
 
 const BASE_PATH = '/bylaws/browse'
+const AI_SEARCH_STORAGE_KEY = 'bylaws-browse-ai-search'
+
+type StoredAiSearch = {
+  searchQuery: string
+  searchResults: SearchResult[]
+  aiAnswer: string | null
+  position?: { x: number; y: number }
+}
 
 export type BylawListItem = { id: number; title: string | null }
 
@@ -135,9 +143,36 @@ export function BylawsBrowseView({
   const [hasSearched, setHasSearched] = useState(false)
   const [lastEmptyQuery, setLastEmptyQuery] = useState('')
   const [position, setPosition] = useState({ x: 20, y: 150 })
+  const positionRef = useRef(position)
   const [isDragging, setIsDragging] = useState(false)
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 })
   const [tocOpen, setTocOpen] = useState(false)
+
+  // Restore AI search from sessionStorage after navigation / reload
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    try {
+      const raw = sessionStorage.getItem(AI_SEARCH_STORAGE_KEY)
+      if (!raw) return
+      const stored = JSON.parse(raw) as StoredAiSearch
+      if (!stored || typeof stored.searchQuery !== 'string') return
+      setSearchQuery(stored.searchQuery)
+      setSearchResults(Array.isArray(stored.searchResults) ? stored.searchResults : [])
+      setAiAnswer(stored.aiAnswer ?? null)
+      setHasSearched(true)
+      if (
+        stored.position &&
+        typeof stored.position.x === 'number' &&
+        typeof stored.position.y === 'number'
+      ) {
+        const pos = { x: stored.position.x, y: stored.position.y }
+        setPosition(pos)
+        positionRef.current = pos
+      }
+    } catch {
+      sessionStorage.removeItem(AI_SEARCH_STORAGE_KEY)
+    }
+  }, [])
 
   useEffect(() => {
     if (!initialSectionSlug) return
@@ -160,15 +195,31 @@ export function BylawsBrowseView({
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       if (isDragging) {
-        setPosition({
+        const next = {
           x: e.clientX - dragOffset.x,
           y: e.clientY - dragOffset.y,
-        })
+        }
+        positionRef.current = next
+        setPosition(next)
       }
     }
 
     const handleMouseUp = () => {
       setIsDragging(false)
+      try {
+        const raw = sessionStorage.getItem(AI_SEARCH_STORAGE_KEY)
+        if (raw) {
+          const stored = JSON.parse(raw) as StoredAiSearch
+          if (stored && typeof stored.searchQuery === 'string') {
+            sessionStorage.setItem(
+              AI_SEARCH_STORAGE_KEY,
+              JSON.stringify({ ...stored, position: positionRef.current }),
+            )
+          }
+        }
+      } catch {
+        // ignore
+      }
     }
 
     if (isDragging) {
@@ -204,8 +255,23 @@ export function BylawsBrowseView({
       const res = await fetch(`/api/semantic-search?q=${encodeURIComponent(searchQuery)}`)
       const data = await res.json()
       const results = (data.results || []) as SearchResult[]
-      setSearchResults(results.sort((a, b) => b.similarity - a.similarity))
-      setAiAnswer(data.answer || null)
+      const sorted = results.sort((a, b) => b.similarity - a.similarity)
+      setSearchResults(sorted)
+      const answer = data.answer || null
+      setAiAnswer(answer)
+      try {
+        sessionStorage.setItem(
+          AI_SEARCH_STORAGE_KEY,
+          JSON.stringify({
+            searchQuery: searchQuery.trim(),
+            searchResults: sorted,
+            aiAnswer: answer,
+            position: { x: position.x, y: position.y },
+          } satisfies StoredAiSearch),
+        )
+      } catch {
+        // ignore storage errors
+      }
       if (results.length === 0) {
         setLastEmptyQuery(searchQuery)
       }
@@ -224,6 +290,21 @@ export function BylawsBrowseView({
     bylaw: section.bylaw ?? undefined,
     subsections,
   }))
+
+  // Slugs currently on the page (current bylaw's sections + subsections) for anchor links
+  const currentPageSlugs = useMemo(() => {
+    const slugs = new Set<string>()
+    for (const { section, subsections } of sectionsWithSubsections) {
+      slugs.add(section.slug)
+      subsections.forEach(sub => slugs.add(sub.slug))
+    }
+    return slugs
+  }, [sectionsWithSubsections])
+
+  const resultHref = (slug: string) =>
+    currentBylawId != null && currentPageSlugs.has(slug)
+      ? `#${slug}`
+      : `${BASE_PATH}?section=${encodeURIComponent(slug)}`
 
   return (
     <ReferenceSidebarProvider>
@@ -365,7 +446,7 @@ export function BylawsBrowseView({
               cursor: isDragging ? 'grabbing' : 'auto',
             }}
             onMouseDown={handleMouseDown}
-            className="fixed z-50 w-[90vw] md:w-[400px] bg-blue-50/95 backdrop-blur-md rounded-2xl border-2 border-blue-200 shadow-2xl overflow-hidden select-none touch-none"
+            className="fixed z-50 w-[90vw] md:w-[520px] bg-blue-50/95 backdrop-blur-md rounded-2xl border-2 border-blue-200 shadow-2xl overflow-hidden select-none touch-none"
           >
             <div className="drag-handle bg-blue-600 p-2 cursor-grab active:cursor-grabbing flex items-center justify-between">
               <div className="flex items-center gap-2 text-white">
@@ -383,6 +464,11 @@ export function BylawsBrowseView({
                   setSearchResults([])
                   setAiAnswer(null)
                   setHasSearched(false)
+                  try {
+                    sessionStorage.removeItem(AI_SEARCH_STORAGE_KEY)
+                  } catch {
+                    // ignore
+                  }
                 }}
                 className="text-white hover:bg-white/20 p-1 rounded-md transition-colors"
               >
@@ -391,7 +477,7 @@ export function BylawsBrowseView({
             </div>
 
             <div className="p-4">
-              <div className="space-y-3 max-h-[400px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-blue-200">
+              <div className="space-y-3 max-h-[400px] md:max-h-[60vh] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-blue-200">
                 {aiAnswer && (
                   <div className="bg-blue-600 text-white p-4 rounded-xl shadow-inner mb-4 text-[13px] leading-relaxed">
                     <div className="flex items-center gap-2 mb-2">
@@ -426,7 +512,7 @@ export function BylawsBrowseView({
                     className="bg-white p-3 rounded-xl border border-blue-100 shadow-sm hover:border-blue-300 transition-all hover:shadow-md"
                   >
                     <Link
-                      href={`${BASE_PATH}?section=${encodeURIComponent(result.slug)}`}
+                      href={resultHref(result.slug)}
                       className="text-blue-600 font-bold hover:underline block text-[13px] leading-tight"
                     >
                       {result.code} {result.title}
@@ -439,7 +525,7 @@ export function BylawsBrowseView({
                         {Math.round(result.similarity * 100)}% Match
                       </div>
                       <Link
-                        href={`${BASE_PATH}?section=${encodeURIComponent(result.slug)}`}
+                        href={resultHref(result.slug)}
                         className="text-[10px] text-blue-600 font-bold hover:text-blue-800"
                       >
                         Navigate →

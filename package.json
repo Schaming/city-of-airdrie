@@ -35,7 +35,9 @@
     "upload:bylaw:supabase:all": "cross-env DOTENV_CONFIG_PATH=.env.supabase NODE_OPTIONS=--no-deprecation tsx scripts/upload-bylaw-data.ts extracted-bylaw-data-1 extracted-bylaw-data-2 extracted-bylaw-data-3 extracted-bylaw-data-4 extracted-bylaw-data-5 extracted-bylaw-data-6 extracted-bylaw-data-7 extracted-bylaw-data-8 extracted-bylaw-data-9",
     "upload:bylaw:all": "cross-env NODE_OPTIONS=--no-deprecation tsx scripts/upload-bylaw-data.ts extracted-bylaw-data-1 extracted-bylaw-data-2 extracted-bylaw-data-3 extracted-bylaw-data-4 extracted-bylaw-data-5 extracted-bylaw-data-6 extracted-bylaw-data-7 extracted-bylaw-data-8 extracted-bylaw-data-9",
     "clear:bylaw": "cross-env NODE_OPTIONS=--no-deprecation tsx scripts/clear-bylaw-data.ts",
-    "import:definitions": "cross-env NODE_OPTIONS=--no-deprecation tsx scripts/definitions/importDefinitions.js"
+    "import:definitions": "cross-env NODE_OPTIONS=--no-deprecation tsx scripts/definitions/importDefinitions.js",
+    "vectorize:bylaws": "cross-env NODE_OPTIONS=--no-deprecation tsx scripts/vectorize-bylaws-airdrie.ts",
+    "vectorize:tables": "cross-env NODE_OPTIONS=--no-deprecation tsx scripts/vectorize-tables.ts"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.968.0",
