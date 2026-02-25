@@ -218,3 +218,7 @@ html[data-theme='dark'],
 html[data-theme='light'] {
   opacity: initial;
 }
+
+p {
+  margin-bottom: 1rem;
+}
