@@ -311,6 +311,29 @@ export function BylawsBrowseView({
       <div className="mx-auto w-full max-w-[1600px] p-3 space-y-4">
         <header className="fixed left-0 right-0 top-0 z-30 border-b border-gray-200 bg-white lg:sticky lg:top-0 lg:left-auto lg:right-auto lg:mb-6">
           <div className="mx-auto w-full max-w-[1600px] px-3 pt-3 pb-2 lg:pb-3">
+            <div className="bylaws-top-nav">
+              <div className="bylaws-top-nav-spacer" />
+              <div className="bylaws-top-nav-links">
+                <p>
+                  <a href="https://civiczone.ca/" className="bylaws-top-nav-link">
+                    Home
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="https://airdrie.civiczone.ca/bylaws/browse  "
+                    className="bylaws-top-nav-link"
+                  >
+                    Aidrie Demo
+                  </a>
+                </p>
+                <p>
+                  <a href="https://civiczone.ca/contact/" className="bylaws-top-nav-link">
+                    Contact Us
+                  </a>
+                </p>
+              </div>
+            </div>
             {/* Mobile: search first */}
             <div className="lg:hidden mb-3">
               <details className="rounded-lg border border-gray-200 bg-white p-3 shadow-sm">
@@ -591,10 +614,10 @@ export function BylawsBrowseView({
               <section className="flex-1 min-w-0 space-y-12">
                 {sectionsWithSubsections.map(({ section, subsections }, index) => (
                   <section
-                  key={section.id}
-                  id={section.slug}
-                  className="scroll-mt-[11rem] lg:scroll-mt-24 space-y-6"
-                >
+                    key={section.id}
+                    id={section.slug}
+                    className="scroll-mt-[11rem] lg:scroll-mt-24 space-y-6"
+                  >
                     <div>
                       {index === 0 && section.bylaw?.title && (
                         <p className="text-2xl font-semibold text-gray-700 mb-2">

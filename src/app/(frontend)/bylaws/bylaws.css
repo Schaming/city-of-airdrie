@@ -137,6 +137,44 @@ tbody tr:hover {
   background-color: #fde047; /* yellow-300 */
 }
 
+/* Top navigation bar (full-width, above main content) */
+.bylaws-top-nav {
+  padding-bottom: 1.5rem;
+  padding-top: .5rem;
+  display: block;
+  text-align: center;
+}
+
+.bylaws-top-nav-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.bylaws-top-nav-links p {
+  margin: 0;
+}
+
+.bylaws-top-nav-link {
+  background: #2c3e50;
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.bylaws-top-nav-link:hover {
+  background: #1a252f;
+  color: #ffffff;
+}
+
 .bylaws-footer {
   border-top: 1px solid #d1d5db;
   color: #374151;

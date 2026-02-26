@@ -1,0 +1,7 @@
+/* Nested ordered lists in admin (e.g. Lexical rich text) use lowercase letters */
+ol ol {
+  list-style-type: lower-alpha;
+}
+ol ol ol {
+  list-style-type: lower-alpha;
+}

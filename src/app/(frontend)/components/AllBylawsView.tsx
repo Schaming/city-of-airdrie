@@ -219,6 +219,21 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
       <div className="mx-auto w-full max-w-[1600px] p-3 space-y-4">
         <header className="fixed left-0 right-0 top-0 z-30 border-b border-gray-200 bg-white pb-4 lg:sticky lg:top-0 lg:left-auto lg:right-auto lg:mb-6">
         <div className="mx-auto w-full max-w-[1600px] px-3 pt-3">
+          <div className="bylaws-top-nav">
+            <div className="bylaws-top-nav-spacer" />
+            <div className="bylaws-top-nav-links">
+              <p>
+                <a href="https://civiczone.ca/" className="bylaws-top-nav-link">
+                  Home
+                </a>
+              </p>
+              <p>
+                <a href="https://civiczone.ca/contact/" className="bylaws-top-nav-link">
+                  Contact Us
+                </a>
+              </p>
+            </div>
+          </div>
           {/* Mobile: search first */}
           <div className="lg:hidden mb-4">
             <details className="rounded-lg border border-gray-200 bg-white p-3 shadow-sm">

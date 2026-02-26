@@ -112,7 +112,7 @@ ol.list-number ol.list-number,
 .list-lower-roman .list-number,
 .prose ol.list-decimal ol.list-decimal,
 .payload-richtext ol.list-decimal ol.list-decimal {
-  list-style-type: upper-alpha;
+  list-style-type: lower-alpha;
 }
 ol.list-decimal ol.list-decimal ol.list-decimal,
 ol.list-number ol.list-number ol.list-number,
