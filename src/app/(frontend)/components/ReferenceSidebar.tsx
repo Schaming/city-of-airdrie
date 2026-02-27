@@ -9,7 +9,7 @@ export function ReferenceSidebar() {
 
   return (
     <aside 
-      className="hidden md:block md:w-72 md:shrink-0 md:border-l md:pl-4 md:sticky md:top-36 md:bottom-0 self-start md:max-h-[calc(100vh-9rem)] md:max-h-[calc(100dvh-9rem)] md:overflow-y-auto"
+      className="hidden md:block md:w-72 md:shrink-0 md:border-l md:pl-4 md:sticky md:top-52 md:bottom-0 self-start md:max-h-[calc(100vh-13rem)] md:max-h-[calc(100dvh-13rem)] md:overflow-y-auto"
       aria-label="Reference Details"
     >
       <div className="space-y-4 pr-2">

@@ -68,7 +68,7 @@ function SubsectionArticle({ sub }: { sub: BylawSubsection }) {
   const { selectAmendment } = useReferenceSidebar()
 
   return (
-    <article id={sub.slug} className={sub.level && sub.level > 1 ? 'ml-6 border-l pl-4' : ''}>
+    <article id={sub.slug} className={`scroll-mt-[13rem] lg:scroll-mt-[16rem] ${sub.level && sub.level > 1 ? 'ml-6 border-l pl-4' : ''}`}>
       <h3
         className={sub.level === 1 ? 'text-lg font-semibold mb-2' : 'text-base font-semibold mb-2'}
       >
@@ -217,7 +217,7 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
   return (
     <ReferenceSidebarProvider>
       <div className="mx-auto w-full max-w-[1600px] p-3 space-y-4">
-        <header className="fixed left-0 right-0 top-0 z-30 border-b border-gray-200 bg-white pb-4 lg:sticky lg:top-0 lg:left-auto lg:right-auto lg:mb-6">
+        <header className="fixed left-0 right-0 top-0 z-30 border-b border-gray-200 bg-white pb-4 lg:sticky lg:top-0 lg:left-auto lg:right-auto lg:mb-6 lg:-mt-3">
         <div className="mx-auto w-full max-w-[1600px] px-3 pt-3">
           <div className="bylaws-top-nav">
             <div className="bylaws-top-nav-spacer" />
@@ -303,7 +303,7 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
         </div>
         </header>
         {/* Spacer so content is not hidden under fixed header on mobile */}
-        <div className="lg:hidden h-52 shrink-0" aria-hidden="true" />
+        <div className="lg:hidden h-[16rem] shrink-0" aria-hidden="true" />
 
         {/* Mobile TOC drawer */}
         <>
@@ -444,7 +444,7 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
 
         <div className="flex flex-col lg:flex-row gap-8">
           <aside
-            className="hidden lg:block lg:w-[17rem] lg:shrink-0 lg:border-r lg:pr-4 lg:sticky lg:top-36 self-start"
+            className="hidden lg:block lg:w-[17rem] lg:shrink-0 lg:border-r lg:pr-4 lg:sticky lg:top-52 self-start"
             aria-label="Bylaw Navigation"
           >
             <AllBylawsSidebar
@@ -461,7 +461,7 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
 
           <section className="flex-1 min-w-0 space-y-12">
             {sectionsWithSubsections.map(({ section, subsections }, index) => (
-              <section key={section.id} id={section.slug} className="space-y-6">
+              <section key={section.id} id={section.slug} className="scroll-mt-[13rem] lg:scroll-mt-[16rem] space-y-6">
                 <div className="">
                   {index === 0 && section.bylaw?.title && (
                     <p className="text-2xl font-semibold text-gray-700 mb-2">
