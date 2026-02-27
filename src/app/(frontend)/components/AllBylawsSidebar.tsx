@@ -53,6 +53,8 @@ function buildTree(subsections: SidebarSubsection[]): NavNode[] {
 
 type Props = {
   items: SidebarSection[]
+  /** Called when a TOC link is clicked (e.g. to close mobile drawer). */
+  onLinkClick?: () => void
 }
 
 const makeKey = (type: 'bylaw' | 'section' | 'sub', id: string | number) => `${type}:${id}`
@@ -83,7 +85,7 @@ function groupByBylaw(
   return map
 }
 
-export function AllBylawsSidebar({ items }: Props) {
+export function AllBylawsSidebar({ items, onLinkClick }: Props) {
   const groups = groupByBylaw(items)
 
   const [openState, setOpenState] = useState<Record<string, boolean>>(() => {
@@ -119,7 +121,8 @@ export function AllBylawsSidebar({ items }: Props) {
         >
           <a
             href={`#${node.slug}`}
-            className="min-w-0 flex-1 break-words hover:underline"
+            className="break-words hover:underline inline-block"
+            onClick={onLinkClick}
           >
             {node.code} {node.title}
           </a>
@@ -200,7 +203,8 @@ export function AllBylawsSidebar({ items }: Props) {
                         >
                           <a
                             href={`#${item.slug}`}
-                            className="min-w-0 flex-1 break-words hover:underline"
+                            className="break-words hover:underline inline-block"
+                            onClick={onLinkClick}
                           >
                             {item.code} {item.title}
                           </a>

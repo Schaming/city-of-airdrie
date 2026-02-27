@@ -61,7 +61,7 @@ function SubsectionArticle({ sub }: { sub: BylawSubsection }) {
   return (
     <article
       id={sub.slug}
-      className={`scroll-mt-[13rem] lg:scroll-mt-[11rem] ${sub.level && sub.level > 1 ? 'ml-6 border-l pl-4' : ''}`}
+      className={`scroll-mt-[14rem] lg:scroll-mt-[12rem] ${sub.level && sub.level > 1 ? 'ml-6 border-l pl-4' : ''}`}
     >
       <h3
         className={sub.level === 1 ? 'text-lg font-semibold mb-2' : 'text-base font-semibold mb-2'}
@@ -441,11 +441,7 @@ export function BylawsBrowseView({
                   <X className="h-5 w-5" />
                 </button>
               </div>
-              <div
-                className="min-h-0 overflow-y-auto p-3"
-                onClick={() => setTocOpen(false)}
-                role="presentation"
-              >
+              <div className="min-h-0 overflow-y-auto p-3">
                 <BylawsBrowseSidebar
                   items={[]}
                   initialSectionSlug={initialSectionSlug}
@@ -455,6 +451,7 @@ export function BylawsBrowseView({
                     ...sectionsByBylawId,
                     ...(currentBylawId != null ? { [currentBylawId]: sidebarItems } : {}),
                   }}
+                  onLinkClick={() => setTocOpen(false)}
                 />
               </div>
             </div>
@@ -616,7 +613,7 @@ export function BylawsBrowseView({
                   <section
                     key={section.id}
                     id={section.slug}
-                    className="scroll-mt-[13rem] lg:scroll-mt-[10rem] space-y-6"
+                    className="scroll-mt-[14rem] lg:scroll-mt-[11rem] space-y-6"
                   >
                     <div>
                       {index === 0 && section.bylaw?.title && (

@@ -147,6 +147,8 @@ type Props = {
   bylawList?: BylawListItem[]
   /** Preloaded sections per bylaw (picker view). When set, no client fetch. */
   sectionsByBylawId?: Record<number, SidebarSection[]>
+  /** Called when a TOC link is clicked (e.g. to close mobile drawer). */
+  onLinkClick?: () => void
 }
 
 export function BylawsBrowseSidebar({
@@ -155,6 +157,7 @@ export function BylawsBrowseSidebar({
   currentBylawId,
   bylawList = [],
   sectionsByBylawId: initialSectionsByBylawId = {},
+  onLinkClick,
 }: Props) {
   const sectionsByBylawId = initialSectionsByBylawId
   const showBylawList = bylawList.length > 0
@@ -220,14 +223,16 @@ export function BylawsBrowseSidebar({
           {isAnchor(node.slug, pickerBylawId) ? (
             <a
               href={`#${node.slug}`}
-              className="min-w-0 flex-1 break-words hover:underline"
+              className="break-words hover:underline inline-block"
+              onClick={onLinkClick}
             >
               {node.code} {node.title}
             </a>
           ) : (
             <Link
               href={sectionHref(node.slug, pickerBylawId)}
-              className="min-w-0 flex-1 break-words hover:underline"
+              className="break-words hover:underline inline-block"
+              onClick={onLinkClick}
             >
               {node.code} {node.title}
             </Link>
@@ -307,7 +312,8 @@ export function BylawsBrowseSidebar({
                 >
                   <Link
                     href={`${BASE_PATH}?bylaw=${b.id}`}
-                    className="min-w-0 flex-1 break-words font-semibold text-gray-900 hover:underline"
+                    className="break-words font-semibold text-gray-900 hover:underline inline-block"
+                    onClick={onLinkClick}
                   >
                     {bylawTitle}
                   </Link>
@@ -346,14 +352,16 @@ export function BylawsBrowseSidebar({
                             {isAnchor(item.slug, b.id) ? (
                               <a
                                 href={`#${item.slug}`}
-                                className="min-w-0 flex-1 break-words hover:underline"
+                                className="break-words hover:underline inline-block"
+                                onClick={onLinkClick}
                               >
                                 {item.code} {item.title}
                               </a>
                             ) : (
                               <Link
                                 href={sectionHref(item.slug, b.id)}
-                                className="min-w-0 flex-1 break-words hover:underline"
+                                className="break-words hover:underline inline-block"
+                                onClick={onLinkClick}
                               >
                                 {item.code} {item.title}
                               </Link>

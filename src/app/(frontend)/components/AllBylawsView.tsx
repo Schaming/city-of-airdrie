@@ -68,7 +68,7 @@ function SubsectionArticle({ sub }: { sub: BylawSubsection }) {
   const { selectAmendment } = useReferenceSidebar()
 
   return (
-    <article id={sub.slug} className={`scroll-mt-[13rem] lg:scroll-mt-[16rem] ${sub.level && sub.level > 1 ? 'ml-6 border-l pl-4' : ''}`}>
+    <article id={sub.slug} className={`scroll-mt-[14rem] lg:scroll-mt-[17rem] ${sub.level && sub.level > 1 ? 'ml-6 border-l pl-4' : ''}`}>
       <h3
         className={sub.level === 1 ? 'text-lg font-semibold mb-2' : 'text-base font-semibold mb-2'}
       >
@@ -331,7 +331,7 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
                 <X className="h-5 w-5" />
               </button>
             </div>
-            <div className="min-h-0 overflow-y-auto p-3" onClick={() => setTocOpen(false)} role="presentation">
+            <div className="min-h-0 overflow-y-auto p-3">
               <AllBylawsSidebar
                 items={sectionsWithSubsections.map(({ section, subsections }) => ({
                   id: section.id,
@@ -341,6 +341,7 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
                   bylaw: section.bylaw ?? undefined,
                   subsections,
                 }))}
+                onLinkClick={() => setTocOpen(false)}
               />
             </div>
           </div>
@@ -461,7 +462,7 @@ export function AllBylawsView({ sectionsWithSubsections }: Props) {
 
           <section className="flex-1 min-w-0 space-y-12">
             {sectionsWithSubsections.map(({ section, subsections }, index) => (
-              <section key={section.id} id={section.slug} className="scroll-mt-[13rem] lg:scroll-mt-[16rem] space-y-6">
+              <section key={section.id} id={section.slug} className="scroll-mt-[14rem] lg:scroll-mt-[17rem] space-y-6">
                 <div className="">
                   {index === 0 && section.bylaw?.title && (
                     <p className="text-2xl font-semibold text-gray-700 mb-2">
