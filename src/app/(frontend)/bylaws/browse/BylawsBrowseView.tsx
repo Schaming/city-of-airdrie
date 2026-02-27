@@ -574,7 +574,7 @@ export function BylawsBrowseView({
               />
             </aside>
             <div className="flex-1 space-y-6">
-              <h2 className="text-lg font-semibold text-gray-800">Select a bylaw</h2>
+              <h2 className="text-lg font-semibold text-gray-800 !mt-0">Select a bylaw</h2>
               <ul className="list-none space-y-2">
                 {bylawList.map(b => (
                   <li key={b.id}>
